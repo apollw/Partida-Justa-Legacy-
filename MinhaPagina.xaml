@@ -2,15 +2,27 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Partida_Justa.MinhaPagina"
-             Title="Tela de Início">
-    
-    <VerticalStackLayout>
+             BackgroundImageSource="background_modelo.png"
+             Title="Início">
+
+    <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+        
         <Label 
-            Text="Bem Vindo ao .NET MAUI!"
+            Text="Partida Justa"
+            TextColor="AntiqueWhite"
+            FontAttributes="Bold"           
+            
             FontSize="Large"
             HorizontalOptions="Center" />
+                
         <Button
-            Text="Navegar para outra página"
+            WidthRequest="200"
+            TextColor="Black"
+            BackgroundColor="LightGray"                 
+            Text="Iniciar"
             Clicked="Button_Clicked"
             HorizontalOptions="Center"/>        
 

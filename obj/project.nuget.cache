@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xZKa1pbNr29p/Cgds/orVRHZWafSfm9lXJbkAAo46dGbsLnAZQmAhTCLdj965S2WFH3YwXAbpawXMQL0xTGsJw==",
+  "dgSpecHash": "O6ywSpLj68ZQqCm95MndkVS9tdAnOuvNs8hkuJo6CoVcspJ89EM7y2fJP0kGYm4Og+BlHsm+U//rZqElDbF26w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lssilva\\source\\repos\\Partida Justa\\Partida Justa.csproj",
+  "projectFilePath": "C:\\Users\\lssilva\\source\\repos\\Partida-Justa\\Partida Justa.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lssilva\\.nuget\\packages\\googlegson\\2.9.0.1\\googlegson.2.9.0.1.nupkg.sha512",
     "C:\\Users\\lssilva\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",

@@ -32,7 +32,7 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.png" />
+		<MauiIcon Include="Resources\AppIcon\appicon.png" BaseSize="424,520" />
 
     <!-- Splash Screen -->
     <MauiSplashScreen Include="Resources\Splash\splashscreen.png" Color="#4CC758" BaseSize="256,256" />
@@ -45,14 +45,6 @@
 
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Compile Remove="meunSorteioLista.xaml.cs" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiXaml Remove="meunSorteioLista.xaml" />
 	</ItemGroup>
 
 	<ItemGroup>
