@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Partida_Justa.MainPage"
+             BackgroundImageSource="background_modelo.png"
+             Title="Menu Principal"
+             
+             >
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image Source="imagem_centro.png"
+             HeightRequest="175"            
+             />
+
+            <Button
+                WidthRequest="200"
+                Text="Menu de Jogador"
+                TextColor="Black"
+                BackgroundColor="LightGray"
+                    
+                HorizontalOptions="Center"
+                Clicked="MenuNavJogador" />
+
+            <Button
+                WidthRequest="200"
+                Text="Menu de Sorteio"
+                TextColor="Black"
+                BackgroundColor="LightGray"
+                    
+                HorizontalOptions="Center"
+                Clicked="MenuNavSorteio" />
+
+            <Button
+                WidthRequest="200"
+                Text="Menu de Partida"
+                TextColor="Black"
+                BackgroundColor="LightGray"
+                    
+                HorizontalOptions="Center"
+                Clicked="MenuNavPartida" />
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

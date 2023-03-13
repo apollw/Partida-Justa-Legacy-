@@ -1,0 +1,119 @@
+is_global = true
+build_property.TargetFramework = net6.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Partida_Justa
+build_property.ProjectDir = C:\Users\lssilva\source\repos\Partida Justa\
+
+[C:/Users/lssilva/source/repos/Partida Justa/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/lssilva/source/repos/Partida Justa/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/lssilva/source/repos/Partida Justa/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/lssilva/source/repos/Partida Justa/MenuJogador.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.MenuJogador.xaml
+build_metadata.AdditionalFiles.TargetPath = MenuJogador.xaml
+build_metadata.AdditionalFiles.RelativePath = MenuJogador.xaml
+
+[C:/Users/lssilva/source/repos/Partida Justa/menuJogadorCad.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.menuJogadorCad.xaml
+build_metadata.AdditionalFiles.TargetPath = menuJogadorCad.xaml
+build_metadata.AdditionalFiles.RelativePath = menuJogadorCad.xaml
+
+[C:/Users/lssilva/source/repos/Partida Justa/menuJogadorEditar.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.menuJogadorEditar.xaml
+build_metadata.AdditionalFiles.TargetPath = menuJogadorEditar.xaml
+build_metadata.AdditionalFiles.RelativePath = menuJogadorEditar.xaml
+
+[C:/Users/lssilva/source/repos/Partida Justa/menuJogadorExcluir.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.menuJogadorExcluir.xaml
+build_metadata.AdditionalFiles.TargetPath = menuJogadorExcluir.xaml
+build_metadata.AdditionalFiles.RelativePath = menuJogadorExcluir.xaml
+
+[C:/Users/lssilva/source/repos/Partida Justa/menuJogadorLista.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.menuJogadorLista.xaml
+build_metadata.AdditionalFiles.TargetPath = menuJogadorLista.xaml
+build_metadata.AdditionalFiles.RelativePath = menuJogadorLista.xaml
+
+[C:/Users/lssilva/source/repos/Partida Justa/MenuPartida.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.MenuPartida.xaml
+build_metadata.AdditionalFiles.TargetPath = MenuPartida.xaml
+build_metadata.AdditionalFiles.RelativePath = MenuPartida.xaml
+
+[C:/Users/lssilva/source/repos/Partida Justa/menuPartidaApagHist.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.menuPartidaApagHist.xaml
+build_metadata.AdditionalFiles.TargetPath = menuPartidaApagHist.xaml
+build_metadata.AdditionalFiles.RelativePath = menuPartidaApagHist.xaml
+
+[C:/Users/lssilva/source/repos/Partida Justa/menuPartidaHist.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.menuPartidaHist.xaml
+build_metadata.AdditionalFiles.TargetPath = menuPartidaHist.xaml
+build_metadata.AdditionalFiles.RelativePath = menuPartidaHist.xaml
+
+[C:/Users/lssilva/source/repos/Partida Justa/menuPartidaReg.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.menuPartidaReg.xaml
+build_metadata.AdditionalFiles.TargetPath = menuPartidaReg.xaml
+build_metadata.AdditionalFiles.RelativePath = menuPartidaReg.xaml
+
+[C:/Users/lssilva/source/repos/Partida Justa/MenuSorteio.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.MenuSorteio.xaml
+build_metadata.AdditionalFiles.TargetPath = MenuSorteio.xaml
+build_metadata.AdditionalFiles.RelativePath = MenuSorteio.xaml
+
+[C:/Users/lssilva/source/repos/Partida Justa/menuSorteioLista.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.menuSorteioLista.xaml
+build_metadata.AdditionalFiles.TargetPath = menuSorteioLista.xaml
+build_metadata.AdditionalFiles.RelativePath = menuSorteioLista.xaml
+
+[C:/Users/lssilva/source/repos/Partida Justa/menuSorteioSort.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.menuSorteioSort.xaml
+build_metadata.AdditionalFiles.TargetPath = menuSorteioSort.xaml
+build_metadata.AdditionalFiles.RelativePath = menuSorteioSort.xaml
+
+[C:/Users/lssilva/source/repos/Partida Justa/MinhaPagina.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.MinhaPagina.xaml
+build_metadata.AdditionalFiles.TargetPath = MinhaPagina.xaml
+build_metadata.AdditionalFiles.RelativePath = MinhaPagina.xaml
+
+[C:/Users/lssilva/source/repos/Partida Justa/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/lssilva/source/repos/Partida Justa/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
