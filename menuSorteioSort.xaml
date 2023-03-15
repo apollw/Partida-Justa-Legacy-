@@ -10,6 +10,32 @@
             Padding="30,0"
             VerticalOptions="Center">
 
+        <Label 
+            Text="Qual será o tamanho das equipes?"
+            TextColor="GhostWhite"
+            FontSize="Small"
+             
+            HorizontalOptions="Center" />
+
+
+        <Entry 
+            x:Name="NomeEntry"
+            WidthRequest="250"                 
+            BackgroundColor="White" 
+            Placeholder="Insira um número de 1 a 10" 
+            Keyboard="Default"                  
+            />
+
+        <Button
+                WidthRequest="200"
+                Text="Iniciar Sorteio"
+                TextColor="Black"
+                BackgroundColor="LightGray"                    
+                HorizontalOptions="Center"
+                Clicked="sortearEquipes"
+                />
+
+
 
     </VerticalStackLayout>
 </ContentPage>

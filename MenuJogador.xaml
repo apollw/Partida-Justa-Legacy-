@@ -22,20 +22,20 @@
 
             <Button
                 WidthRequest="200"
-                Text="Excluir Jogador"
-                TextColor="Black"
-                BackgroundColor="LightGray"                    
-                HorizontalOptions="Center"
-                Clicked="MenuExcluirJogador"
-                />
-
-            <Button
-                WidthRequest="200"
                 Text="Editar Jogador"
                 TextColor="Black"
                 BackgroundColor="LightGray"                    
                 HorizontalOptions="Center"
                 Clicked="MenuEditarJogador"
+                />
+
+            <Button
+                WidthRequest="200"
+                Text="Excluir Jogador"
+                TextColor="Black"
+                BackgroundColor="LightGray"                    
+                HorizontalOptions="Center"
+                Clicked="MenuExcluirJogador"
                 />
 
             <Button

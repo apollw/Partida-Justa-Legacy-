@@ -10,6 +10,31 @@
             Padding="30,0"
             VerticalOptions="Center">
 
+        <Label 
+            Text="Pesquisa de Jogador"
+            TextColor="GhostWhite"
+            FontSize="Title"
+             
+            HorizontalOptions="Center" />
+
+
+            <Entry
+            x:Name="NomeEntry"
+            WidthRequest="250"                 
+            BackgroundColor="White" 
+            Placeholder="Digite o nome do jogador" 
+            Keyboard="Default"                  
+            />
+
+        <Button
+                WidthRequest="200"
+                Text="Editar Jogador"
+                TextColor="Black"
+                BackgroundColor="LightGray"                    
+                HorizontalOptions="Center"
+                Clicked="editarJogador"
+                />
 
     </VerticalStackLayout>
+    
 </ContentPage>

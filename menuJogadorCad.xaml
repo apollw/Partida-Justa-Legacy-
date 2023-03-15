@@ -9,8 +9,40 @@
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
+
+            <Label 
+            Text="Nome do Jogador"
+            TextColor="GhostWhite"
+            FontSize="Title"
+             
+            HorizontalOptions="Center" />   
         
-        
+
+        <Entry 
+            WidthRequest="250"                 
+            BackgroundColor="White" 
+            Placeholder="Digite o nome do jogador" 
+            Keyboard="Default"                  
+            />
+
+        <Slider Maximum="5"
+                ValueChanged="OnSliderValueChanged" />
+
+        <Label x:Name="displayLabel"
+               Text="Nível"
+               TextColor="GhostWhite"
+               FontSize="Title"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+        <Button
+                WidthRequest="200"
+                Text="Cadastrar Jogador"
+                TextColor="Black"
+                BackgroundColor="LightGray"                    
+                HorizontalOptions="Center"
+                Clicked="cadastrarJogador"
+                />
 
     </VerticalStackLayout>
 
