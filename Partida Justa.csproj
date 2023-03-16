@@ -32,7 +32,8 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.png" BaseSize="424,520" />
+    <MauiIcon Include="Resources\AppIcon\appicon.png" BaseSize="128,128" Resize="true" />
+    
 
     <!-- Splash Screen -->
     <MauiSplashScreen Include="Resources\Splash\splashscreen.png" Color="#4CC758" BaseSize="256,256" />
@@ -48,15 +49,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\AppIcon\appicon.svg" />
-	  <None Remove="Resources\AppIcon\appiconfg.svg" />
-	  <None Remove="Resources\Images\background_modelo.png" />
-	  <None Remove="Resources\Images\dotnet_bot.svg" />
-	  <None Remove="Resources\Images\imagem_centro.png" />
-	  <None Remove="Resources\Images\MenuJogador.svg" />
-	  <None Remove="Resources\Images\menupartida.svg" />
-	  <None Remove="Resources\Images\menusorteio.svg" />
-	  <None Remove="Resources\Splash\splash.svg" />
+	  <None Remove="Resources\AppIcon\novo_icon.png" />
 	</ItemGroup>
 
 	<ItemGroup>

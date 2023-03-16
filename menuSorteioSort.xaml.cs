@@ -20,5 +20,8 @@ public partial class menuSorteioSort : ContentPage
         else
             await DisplayAlert("Alerta", "Times Sorteados com Sucesso!", "Fechar");
         //Ainda falta implementar aqui a lógica de sorteio
+
+
+        //Adicionar Tratamento de erro para caso o usuário entre com uma string ao invés de um número
     }
 }

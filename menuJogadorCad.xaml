@@ -15,8 +15,7 @@
             TextColor="GhostWhite"
             FontSize="Title"
              
-            HorizontalOptions="Center" />   
-        
+            HorizontalOptions="Center" />           
 
         <Entry 
             WidthRequest="250"                 
@@ -25,15 +24,15 @@
             Keyboard="Default"                  
             />
 
-        <Slider Maximum="5"
-                ValueChanged="OnSliderValueChanged" />
-
         <Label x:Name="displayLabel"
-               Text="Nível"
+               Text="Nível do Jogador"
                TextColor="GhostWhite"
                FontSize="Title"
                HorizontalOptions="Center"
                VerticalOptions="Center" />
+
+        <Slider Maximum="5"
+                ValueChanged="OnSliderValueChanged" />       
 
         <Button
                 WidthRequest="200"

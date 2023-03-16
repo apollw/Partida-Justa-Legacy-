@@ -30,7 +30,7 @@
                 WidthRequest="200"
                 Text="Menu de Sorteio"
                 TextColor="Black"
-                BackgroundColor="LightGray"
+                BackgroundColor="LightGray"                
                     
                 HorizontalOptions="Center"
                 Clicked="MenuNavSorteio" />
