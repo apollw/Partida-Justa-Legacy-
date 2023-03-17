@@ -11,6 +11,11 @@ public partial class menuJogadorCad : ContentPage
     {
         //Quando o usuário clicar em "Cadastrar Jogador", o jogador é salvo na lista
         //Exibe o alerta que a operação foi bem sucedida
+        //string nome = Entry.Text;
+
+        //Para fazer Vinculação de Dados do Botão que foi definido na View, precisamos
+        //definir uma BindingContext
+
         await DisplayAlert("Alerta", "Jogador Incluído com Sucesso!", "Concluir");
 
         //Falta implementar o tratamento de erro para caso o nome do jogador já exista 

@@ -49,10 +49,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\AppIcon\novo_icon.png" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <MauiXaml Update="MenuJogador.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
