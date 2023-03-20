@@ -100,12 +100,6 @@ build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.menuSorteioS
 build_metadata.AdditionalFiles.TargetPath = menuSorteioSort.xaml
 build_metadata.AdditionalFiles.RelativePath = menuSorteioSort.xaml
 
-[C:/Users/lssilva/source/repos/Partida-Justa/MinhaPagina.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.MinhaPagina.xaml
-build_metadata.AdditionalFiles.TargetPath = MinhaPagina.xaml
-build_metadata.AdditionalFiles.RelativePath = MinhaPagina.xaml
-
 [C:/Users/lssilva/source/repos/Partida-Justa/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.Resources.Styles.Colors.xaml

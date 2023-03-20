@@ -32,9 +32,8 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-    <MauiIcon Include="Resources\AppIcon\appicon.png" BaseSize="128,128" Resize="true" />
+    <MauiIcon Include="Resources\AppIcon\appicon.png" BaseSize="64,64" Resize="true" />
     
-
     <!-- Splash Screen -->
     <MauiSplashScreen Include="Resources\Splash\splashscreen.png" Color="#4CC758" BaseSize="256,256" />
 
@@ -76,9 +75,11 @@
 	  <MauiXaml Update="menuSorteioSort.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="MinhaPagina.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0-preview1" />
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 	</ItemGroup>
 
 </Project>

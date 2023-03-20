@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "fq98TGc4SkbJm4pPN4MS4Ku/b2JGfe87UzRM+pGF7aBhjrO/Dgzp5HGRcOtTIy54Em9+lyNGzdH60a2WfQCa2Q==",
+  "dgSpecHash": "qtZzH4SoBDf6PjH0ESLSWXn+en22lyTe8SEvbD/SKinXhTno3N0VN69xnrBX3J4epyA3uafipncQfst8xJPdew==",
   "success": true,
   "projectFilePath": "C:\\Users\\lssilva\\source\\repos\\Partida-Justa\\Partida Justa.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\lssilva\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.0-preview1\\communitytoolkit.mvvm.8.2.0-preview1.nupkg.sha512",
     "C:\\Users\\lssilva\\.nuget\\packages\\googlegson\\2.9.0.1\\googlegson.2.9.0.1.nupkg.sha512",
     "C:\\Users\\lssilva\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
     "C:\\Users\\lssilva\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
@@ -20,6 +21,7 @@
     "C:\\Users\\lssilva\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\6.0.501\\microsoft.maui.graphics.win2d.winui.desktop.6.0.501.nupkg.sha512",
     "C:\\Users\\lssilva\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22000.194\\microsoft.windows.sdk.buildtools.10.0.22000.194.nupkg.sha512",
     "C:\\Users\\lssilva\\.nuget\\packages\\microsoft.windowsappsdk\\1.1.5\\microsoft.windowsappsdk.1.1.5.nupkg.sha512",
+    "C:\\Users\\lssilva\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\lssilva\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\lssilva\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\lssilva\\.nuget\\packages\\system.runtime.interopservices.nfloat.internal\\6.0.1\\system.runtime.interopservices.nfloat.internal.6.0.1.nupkg.sha512",
