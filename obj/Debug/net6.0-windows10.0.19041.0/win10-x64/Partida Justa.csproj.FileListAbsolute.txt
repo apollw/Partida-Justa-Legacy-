@@ -388,6 +388,7 @@ C:\Users\lssilva\source\repos\Partida-Justa\bin\Debug\net6.0-windows10.0.19041.0
 C:\Users\lssilva\source\repos\Partida-Justa\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Partida Justa.pdb
 C:\Users\lssilva\source\repos\Partida-Justa\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri
 C:\Users\lssilva\source\repos\Partida-Justa\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml
+C:\Users\lssilva\source\repos\Partida-Justa\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Mvvm.dll
 C:\Users\lssilva\source\repos\Partida-Justa\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.dll
 C:\Users\lssilva\source\repos\Partida-Justa\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\lssilva\source\repos\Partida-Justa\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.DependencyInjection.dll
@@ -410,6 +411,7 @@ C:\Users\lssilva\source\repos\Partida-Justa\bin\Debug\net6.0-windows10.0.19041.0
 C:\Users\lssilva\source\repos\Partida-Justa\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.System.Power.Projection.dll
 C:\Users\lssilva\source\repos\Partida-Justa\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.System.Projection.dll
 C:\Users\lssilva\source\repos\Partida-Justa\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll
+C:\Users\lssilva\source\repos\Partida-Justa\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Newtonsoft.Json.dll
 C:\Users\lssilva\source\repos\Partida-Justa\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Graphics.Canvas.dll
 C:\Users\lssilva\source\repos\Partida-Justa\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Bootstrap.dll
 C:\Users\lssilva\source\repos\Partida-Justa\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.CSharp.dll
@@ -757,5 +759,3 @@ C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
-C:\Users\lssilva\source\repos\Partida-Justa\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Mvvm.dll
-C:\Users\lssilva\source\repos\Partida-Justa\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Newtonsoft.Json.dll

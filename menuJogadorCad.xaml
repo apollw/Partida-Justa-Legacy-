@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Partida_Justa.menuJogadorCad"             
+             x:Class="Partida_Justa.menuJogadorCad"
              BackgroundImageSource="background_modelo.png"
              Title="Cadastro de Jogadores">
 
@@ -13,17 +13,14 @@
             <Label 
             Text="Nome do Jogador"
             TextColor="GhostWhite"
-            FontSize="Title"
-             
+            FontSize="Title"             
             HorizontalOptions="Center" />
 
         <Entry
-            x:Name="NomeEntry"
+            Text="{Binding NomeJogador}"
             WidthRequest="250"                 
             BackgroundColor="White" 
-            Placeholder="Digite o nome do jogador" 
-            
-            Text="{Binding Jogador.Nome}"
+            Placeholder="Digite o nome do jogador"             
             Keyboard="Default"
             />
 
@@ -38,18 +35,15 @@
                 ValueChanged="OnSliderValueChanged" />
 
         <Button
-                x:Name="cadastrarJogador_Botao"
                 WidthRequest="200"
                 Text="Cadastrar Jogador"
                 TextColor="Black"
                 BackgroundColor="LightGray"                    
                 HorizontalOptions="Center"
+                Command="{Binding CadastrarCommand}"
                 Clicked="cadastrarJogador"
-            
-                Command="{Binding SalvarNomeCommand}"
-                CommandParameter="{Binding Source={x:Reference NomeEntry}, Path=Text}"
-                />
-
+         />
+        
     </VerticalStackLayout>
 
 </ContentPage>

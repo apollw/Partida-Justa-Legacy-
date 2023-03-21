@@ -7,16 +7,8 @@ public partial class menuJogadorCad : ContentPage
 	public menuJogadorCad()
 	{
 		InitializeComponent();
-
-        //Cria um objeto JogadorModel com o nome vazio
-        JogadorModel jogador = new JogadorModel { Nome = "" };
-
-        //Cria um objeto JogadorViewModel passando o objeto jogador como parâmetro
-        JogadorViewModel jogadorViewModel = new JogadorViewModel(jogador);
-
-        //Vincula o objeto jogadorViewModel à propriedade BindingContext da View
-        this.BindingContext = jogadorViewModel;
-
+        // Define o BindingContext da página para uma nova instância da classe JogadorViewModel
+        BindingContext = new JogadorViewModel();
     }
 
     // Evento Clicked do botão para adicionar o jogador à lista de jogadores usando as propriedades
@@ -25,16 +17,20 @@ public partial class menuJogadorCad : ContentPage
     {
         //Quando o usuário clicar em "Cadastrar Jogador", o jogador é salvo na lista
         //Exibe o alerta que a operação foi bem sucedida
-
-
         //Para fazer Vinculação de Dados do Botão que foi definido na View, precisamos
         //definir uma BindingContext
+
+        // Obtém o ViewModel associado à página
+        var viewModel = BindingContext as JogadorViewModel;
+
+        // Executa o comando EnviarCommand do ViewModel
+        if (viewModel.EnviarCommand.CanExecute(null))
+            viewModel.EnviarCommand.Execute(null);
 
         await DisplayAlert("Alerta", "Jogador Incluído com Sucesso!", "Concluir");
 
        //Falta implementar o tratamento de erro para caso o nome do jogador já exista 
        //na lista
-
     }
 
     //Elemento de Slider que altera os valores à medida que o usuário desliza o elemento na tela
