@@ -17,7 +17,6 @@
              
             HorizontalOptions="Center" />
 
-
         <Entry
             x:Name="NomeEntry"
             WidthRequest="250"                 
@@ -28,12 +27,13 @@
 
         <Button
                 WidthRequest="200"
-                Text="Excluir Jogador"
+                Text="Apagar Lista Inteira"
                 TextColor="Black"
                 BackgroundColor="LightGray"                    
                 HorizontalOptions="Center"
                 Clicked="excluirJogador"
-                />
+         />        
+ 
 
     </VerticalStackLayout>
 </ContentPage>

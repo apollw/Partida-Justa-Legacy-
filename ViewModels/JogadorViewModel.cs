@@ -123,7 +123,6 @@ namespace Partida_Justa.Models
 
         void OnEnviar()
         {
-
             // Verifica se o arquivo jogadores.json existe
             var filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
             if (File.Exists(filePath))
@@ -146,9 +145,6 @@ namespace Partida_Justa.Models
             // Serializa a lista de jogadores em uma string JSON
             var json2 = JsonConvert.SerializeObject(Jogadores);
 
-            // Salva a string JSON em um arquivo local
-            File.WriteAllText(filePath, json2);
-
             //Salva a string JSON em um arquivo local
             var filePath2 = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
             File.WriteAllText(filePath, json2);
@@ -162,8 +158,20 @@ namespace Partida_Justa.Models
         {
             string filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json"); 
             string json = File.ReadAllText(filePath);
+
             List<JogadorModel> jogadores = JsonConvert.DeserializeObject<List<JogadorModel>>(json);
             Jogadores = new ObservableCollection<JogadorModel>(jogadores);
+        }
+
+        //O método abaixo apaga não os elementos do arquivo JSON em si, mas sim todo o arquivo
+        public void OnExcluir()
+        {
+            var filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
+            if (File.Exists(filePath))
+            {
+                // Se o arquivo existe, lê o conteúdo do arquivo e desserializa em uma lista de objetos JogadorModel
+                File.Delete(filePath);
+            }
         }
 
     }

@@ -18,6 +18,5 @@
             </ListView.ItemTemplate>
         </ListView>
 
-
     </VerticalStackLayout>
 </ContentPage>

@@ -40,32 +40,64 @@ public partial class menuJogadorCad : ContentPage
         // Obtém o ViewModel associado à página
         var viewModel = BindingContext as JogadorViewModel;
 
-        // Executa o comando EnviarCommand do ViewModel
-        if (viewModel.EnviarCommand.CanExecute(null))
-            viewModel.EnviarCommand.Execute(null);
+        //// Executa o comando EnviarCommand do ViewModel
+        //if (viewModel.EnviarCommand.CanExecute(null))
+        //    viewModel.EnviarCommand.Execute(null);
 
-        double value = args.NewValue;
+        double value = (int)args.NewValue;
+
         //Controle do Slider para responder a valores inteiros
         switch (value)
         {
-            case >= 0 and < 1:
+            case 1:
                 displayLabel.Text = String.Format("Nível 1");
+                // Atualiza a propriedade NotaJogador com o novo valor do slider
+                viewModel.NotaJogador = 1;
                 break;
-            case >= 1 and < 2:
+            case 2:
                 displayLabel.Text = String.Format("Nível 2");
+                viewModel.NotaJogador = 2;
                 break;
-            case >= 2 and < 3:
+            case 3:
                 displayLabel.Text = String.Format("Nível 3");
+                viewModel.NotaJogador = 3;
                 break;
-            case >= 3 and < 4:
+            case 4:
                 displayLabel.Text = String.Format("Nível 4");
+                viewModel.NotaJogador = 4;
                 break;
-            case >= 4 and <= 5:
+            case 5:
                 displayLabel.Text = String.Format("Nível 5");
+                viewModel.NotaJogador = 5;
                 break;
             default:
                 // Você pode colocar algum código para lidar com valores inválidos aqui
                 break;
+
+            //case >= 0 and < 1:
+            //    displayLabel.Text = String.Format("Nível 1");
+            //    // Atualiza a propriedade NotaJogador com o novo valor do slider
+            //    viewModel.NotaJogador = 1;
+            //    break;
+            //case >= 1 and < 2:
+            //    displayLabel.Text = String.Format("Nível 2");
+            //    viewModel.NotaJogador = 2;
+            //    break;
+            //case >= 2 and < 3:
+            //    displayLabel.Text = String.Format("Nível 3");
+            //    viewModel.NotaJogador = 3;
+            //    break;
+            //case >= 3 and < 4:
+            //    displayLabel.Text = String.Format("Nível 4");
+            //    viewModel.NotaJogador = 4;
+            //    break;
+            //case >= 4 and <= 5:
+            //    displayLabel.Text = String.Format("Nível 5");
+            //    viewModel.NotaJogador = 5;
+            //    break;
+            //default:
+            //    // Você pode colocar algum código para lidar com valores inválidos aqui
+            //    break;
         }
     }
 }
