@@ -36,6 +36,14 @@ public partial class menuJogadorCad : ContentPage
     //Elemento de Slider que altera os valores à medida que o usuário desliza o elemento na tela
     void OnSliderValueChanged(object sender, ValueChangedEventArgs args)
     {
+
+        // Obtém o ViewModel associado à página
+        var viewModel = BindingContext as JogadorViewModel;
+
+        // Executa o comando EnviarCommand do ViewModel
+        if (viewModel.EnviarCommand.CanExecute(null))
+            viewModel.EnviarCommand.Execute(null);
+
         double value = args.NewValue;
         //Controle do Slider para responder a valores inteiros
         switch (value)

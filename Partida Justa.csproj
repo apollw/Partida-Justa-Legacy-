@@ -82,4 +82,10 @@
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="menuJogadorCad.xaml.cs">
+	    <DependentUpon>menuJogadorCad.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
 </Project>

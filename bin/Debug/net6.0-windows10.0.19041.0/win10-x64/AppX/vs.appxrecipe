@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\lssilva\source\repos\Partida-Justa\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-03-21T17:50:18.464</Modified>
+      <Modified>2023-03-22T16:02:52.857</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\lssilva\source\repos\Partida-Justa\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-03-21T17:50:17.186</Modified>
+      <Modified>2023-03-22T16:02:52.409</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lssilva\source\repos\Partida-Justa\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Partida Justa.runtimeconfig.json">
       <PackagePath>Partida Justa.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lssilva\source\repos\Partida-Justa\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Partida Justa.dll">
       <PackagePath>Partida Justa.dll</PackagePath>
-      <Modified>2023-03-21T17:50:15.478</Modified>
+      <Modified>2023-03-22T16:02:51.265</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Partida Justa.exe</PackagePath>
-      <Modified>2023-03-21T17:50:15.551</Modified>
+      <Modified>2023-03-22T16:02:51.303</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lssilva\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.15\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1071,7 +1071,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\Partida Justa.deps.json">
       <PackagePath>Partida Justa.deps.json</PackagePath>
-      <Modified>2023-03-21T17:50:18.247</Modified>
+      <Modified>2023-03-22T16:02:52.708</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lssilva\.nuget\packages\microsoft.maui.controls.ref.win\6.0.552\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

@@ -9,6 +9,15 @@
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
-     
+
+        <ListView ItemsSource="{Binding Jogadores}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Nome}" Detail="{Binding Nota}" />
+                </DataTemplate>                
+            </ListView.ItemTemplate>
+        </ListView>
+
+
     </VerticalStackLayout>
 </ContentPage>

@@ -19,6 +19,7 @@ namespace Partida_Justa.Models
     {
         //Properties
         string nomeJogador; //This is private
+        int notaJogador;
 
         private ObservableCollection<JogadorModel> _jogadores;
         public ObservableCollection<JogadorModel> Jogadores
@@ -39,6 +40,18 @@ namespace Partida_Justa.Models
                     return;
                 nomeJogador = value;
                 OnPropertyChanged(nameof(NomeJogador));
+            }
+        }
+
+        public int NotaJogador
+        {
+            get => notaJogador;
+            set
+            {
+                if (notaJogador == value)
+                    return;
+                notaJogador = value;
+                OnPropertyChanged(nameof(NotaJogador));
             }
         }
 
@@ -110,10 +123,19 @@ namespace Partida_Justa.Models
 
         void OnEnviar()
         {
-            //Implementar aqui a lógica para salvar o texto na base de dados
+
+            // Verifica se o arquivo jogadores.json existe
+            var filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
+            if (File.Exists(filePath))
+            {
+                // Se o arquivo existe, lê o conteúdo do arquivo e desserializa em uma lista de objetos JogadorModel
+                string json1 = File.ReadAllText(filePath);
+                List<JogadorModel> jogadores = JsonConvert.DeserializeObject<List<JogadorModel>>(json1);
+                Jogadores = new ObservableCollection<JogadorModel>(jogadores);
+            }
 
             // Cria uma nova instância da classe Jogador com os dados de entrada do usuário
-            var jogador = new JogadorModel { Nome = NomeJogador };
+            var jogador = new JogadorModel { Nome = NomeJogador , Nota = NotaJogador};
 
             // Adiciona o jogador à lista de jogadores
             Jogadores.Add(jogador);
@@ -122,15 +144,26 @@ namespace Partida_Justa.Models
             NomeJogador = string.Empty;
 
             // Serializa a lista de jogadores em uma string JSON
-            var json = JsonConvert.SerializeObject(Jogadores);
+            var json2 = JsonConvert.SerializeObject(Jogadores);
+
+            // Salva a string JSON em um arquivo local
+            File.WriteAllText(filePath, json2);
 
             //Salva a string JSON em um arquivo local
-            var filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
-            File.WriteAllText(filePath, json);
+            var filePath2 = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
+            File.WriteAllText(filePath, json2);
 
             //salva a string JSON em um arquivo no Desktop
             //var filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "jogadores.json");
             //File.WriteAllText(filePath, json);
+        }
+
+        public void OnCarregar()
+        {
+            string filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json"); 
+            string json = File.ReadAllText(filePath);
+            List<JogadorModel> jogadores = JsonConvert.DeserializeObject<List<JogadorModel>>(json);
+            Jogadores = new ObservableCollection<JogadorModel>(jogadores);
         }
 
     }
