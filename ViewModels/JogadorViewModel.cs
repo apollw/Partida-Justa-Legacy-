@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using GoogleGson;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -122,15 +123,20 @@ namespace Partida_Justa.Models
         }
 
         void OnEnviar()
-        {
-
+        {           
             // Verifica se o arquivo jogadores.json existe
             var filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
+            
             if (File.Exists(filePath))
             {
                 // Se o arquivo existe, lê o conteúdo do arquivo e desserializa em uma lista de objetos JogadorModel
+
                 string json1 = File.ReadAllText(filePath);
-                List<JogadorModel> jogadores = JsonConvert.DeserializeObject<List<JogadorModel>>(json1);
+                List<JogadorModel> jogadores = new List<JogadorModel>();
+
+                if (json1 != string.Empty)
+                    jogadores = JsonConvert.DeserializeObject<List<JogadorModel>>(json1);
+
                 Jogadores = new ObservableCollection<JogadorModel>(jogadores);
             }
 
@@ -142,8 +148,9 @@ namespace Partida_Justa.Models
 
             // Limpa a propriedade NomeJogador para que o usuário possa inserir um novo nome
             NomeJogador = string.Empty;
+            NotaJogador = 0;
 
-            // Serializa a lista de jogadores em uma string JSON
+            //// Serializa a lista de jogadores em uma string JSON
             var json2 = JsonConvert.SerializeObject(Jogadores);
 
             // Salva a string JSON em um arquivo local
@@ -160,10 +167,29 @@ namespace Partida_Justa.Models
 
         public void OnCarregar()
         {
-            string filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json"); 
-            string json = File.ReadAllText(filePath);
-            List<JogadorModel> jogadores = JsonConvert.DeserializeObject<List<JogadorModel>>(json);
-            Jogadores = new ObservableCollection<JogadorModel>(jogadores);
+            string filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
+            if (File.Exists(filePath))
+            {
+                // Se o arquivo existe, lê o conteúdo do arquivo e desserializa em uma lista de objetos JogadorModel
+                string json = File.ReadAllText(filePath);
+                List<JogadorModel> jogadores = new List<JogadorModel>();
+
+                if (json != string.Empty)
+                    jogadores = JsonConvert.DeserializeObject<List<JogadorModel>>(json);
+
+                Jogadores = new ObservableCollection<JogadorModel>(jogadores);
+            }    
+        }
+
+        //O método abaixo apaga não os elementos do arquivo JSON em si, mas sim todo o arquivo
+        public void OnExcluir()
+        {
+            var filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
+            if (File.Exists(filePath))
+            {
+                // Se o arquivo existe, lê o conteúdo do arquivo e desserializa em uma lista de objetos JogadorModel
+                File.WriteAllText(filePath, string.Empty);
+            }
         }
 
     }

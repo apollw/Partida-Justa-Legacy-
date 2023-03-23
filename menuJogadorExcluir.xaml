@@ -10,29 +10,27 @@
             Padding="30,0"
             VerticalOptions="Center">
 
-        <Label 
+        <!--<Label 
             Text="Pesquisa de Jogador"
             TextColor="GhostWhite"
-            FontSize="Title"
-             
-            HorizontalOptions="Center" />
+            FontSize="Title"             
+            HorizontalOptions="Center" />-->
 
-
-        <Entry
+        <!--<Entry
             x:Name="NomeEntry"
             WidthRequest="250"                 
             BackgroundColor="White" 
             Placeholder="Digite o nome do jogador" 
             Keyboard="Default"                  
-            />
+            />-->
 
         <Button
                 WidthRequest="200"
-                Text="Excluir Jogador"
+                Text="Apagar toda a Lista"
                 TextColor="Black"
                 BackgroundColor="LightGray"                    
                 HorizontalOptions="Center"
-                Clicked="excluirJogador"
+                Clicked="apagarLista"
                 />
 
     </VerticalStackLayout>

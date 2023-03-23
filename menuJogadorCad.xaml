@@ -25,16 +25,27 @@
             />
 
         <Label x:Name="displayLabel"
-               Text="Nível do Jogador"
+               Text="Seleciona a Nota do Jogador"
                TextColor="GhostWhite"
-               FontSize="Title"
+               FontSize="Subtitle"
                HorizontalOptions="Center"
                VerticalOptions="Center" />
 
-        <Slider 
-                Value="{Binding Nota}"
-                Maximum="5"
-                ValueChanged="OnSliderValueChanged" />
+        <Picker x:Name="picker"
+        FontSize="Caption"
+        HorizontalOptions="Center"
+        SelectedIndexChanged="OnPickerSelectedIndexChanged"
+        >
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>1</x:String>
+                    <x:String>2</x:String>
+                    <x:String>3</x:String>
+                    <x:String>4</x:String>
+                    <x:String>5</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
 
         <Button
                 WidthRequest="200"
@@ -45,6 +56,8 @@
                 Command="{Binding CadastrarCommand}"
                 Clicked="cadastrarJogador"
          />
+        
+        
         
     </VerticalStackLayout>
 

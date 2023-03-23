@@ -12,12 +12,12 @@
 
         <ListView ItemsSource="{Binding Jogadores}">
             <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextCell Text="{Binding Nome}" Detail="{Binding Nota}" />
-                </DataTemplate>                
+                <DataTemplate >
+                    <TextCell Text="{Binding Nome}" Detail="{Binding Nota}"/>
+                </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
 
-
     </VerticalStackLayout>
+    
 </ContentPage>

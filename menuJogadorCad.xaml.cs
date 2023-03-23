@@ -33,39 +33,18 @@ public partial class menuJogadorCad : ContentPage
        //na lista
     }
 
-    //Elemento de Slider que altera os valores à medida que o usuário desliza o elemento na tela
-    void OnSliderValueChanged(object sender, ValueChangedEventArgs args)
+    void OnPickerSelectedIndexChanged(object sender, EventArgs e)
     {
+        var picker = (Picker)sender;
+        int selectedIndex = picker.SelectedIndex;
 
-        // Obtém o ViewModel associado à página
-        var viewModel = BindingContext as JogadorViewModel;
-
-        // Executa o comando EnviarCommand do ViewModel
-        if (viewModel.EnviarCommand.CanExecute(null))
-            viewModel.EnviarCommand.Execute(null);
-
-        double value = args.NewValue;
-        //Controle do Slider para responder a valores inteiros
-        switch (value)
+        if (selectedIndex != -1)
         {
-            case >= 0 and < 1:
-                displayLabel.Text = String.Format("Nível 1");
-                break;
-            case >= 1 and < 2:
-                displayLabel.Text = String.Format("Nível 2");
-                break;
-            case >= 2 and < 3:
-                displayLabel.Text = String.Format("Nível 3");
-                break;
-            case >= 3 and < 4:
-                displayLabel.Text = String.Format("Nível 4");
-                break;
-            case >= 4 and <= 5:
-                displayLabel.Text = String.Format("Nível 5");
-                break;
-            default:
-                // Você pode colocar algum código para lidar com valores inválidos aqui
-                break;
+            int notaJogador = int.Parse((string)picker.ItemsSource[selectedIndex]);
+            // Atribua a nota do jogador aqui
+            var viewModel = (JogadorViewModel)BindingContext;
+            viewModel.NotaJogador = notaJogador;
         }
     }
+
 }
