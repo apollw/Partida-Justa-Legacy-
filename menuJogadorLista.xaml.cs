@@ -24,8 +24,6 @@ public partial class menuJogadorLista : ContentPage
             textCell.SetBinding(TextCell.DetailProperty, "Nota");
             return textCell;
         });
-        Content = listView;         
-
+        Content = listView;      
     }
-
 }

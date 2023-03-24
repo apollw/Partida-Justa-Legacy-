@@ -11,26 +11,35 @@ public partial class menuJogadorCad : ContentPage
         BindingContext = new JogadorViewModel();
     }
 
-    // Evento Clicked do botão para adicionar o jogador à lista de jogadores usando as propriedades
-    // Nome e Nota do ViewModel
     private async void cadastrarJogador(object sender, EventArgs e)
     {
-        //Quando o usuário clicar em "Cadastrar Jogador", o jogador é salvo na lista
-        //Exibe o alerta que a operação foi bem sucedida
-        //Para fazer Vinculação de Dados do Botão que foi definido na View, precisamos
-        //definir uma BindingContext
-
         // Obtém o ViewModel associado à página
-        var viewModel = BindingContext as JogadorViewModel;
+        JogadorViewModel viewModel = BindingContext as JogadorViewModel;
 
         // Executa o comando EnviarCommand do ViewModel
         if (viewModel.EnviarCommand.CanExecute(null))
             viewModel.EnviarCommand.Execute(null);
 
-        await DisplayAlert("Alerta", "Jogador Incluído com Sucesso!", "Concluir");
+        if (viewModel.ObjJogador.Nome == string.Empty)
+            await DisplayAlert("Alerta", "O nome do Jogador não foi informado!", "Concluir");
 
-       //Falta implementar o tratamento de erro para caso o nome do jogador já exista 
-       //na lista
+        else if (viewModel.ObjJogador.Nota == 0)
+            await DisplayAlert("Alerta", "A nota do Jogador não foi informada!", "Concluir");
+
+        else if (viewModel.Repeticao == true)
+        {
+            await DisplayAlert("Alerta", "Jogador Inserido já existe!", "Concluir");
+            viewModel.Repeticao = false; //Procura de novo
+        }
+
+        else
+        {
+            await DisplayAlert("Alerta", "Jogador Incluído com Sucesso!", "Concluir");
+            viewModel.NomeJogador = string.Empty;
+            viewModel.NotaJogador = 0;
+            picker.SelectedIndex = -1;
+
+        }
     }
 
     void OnPickerSelectedIndexChanged(object sender, EventArgs e)
@@ -41,8 +50,9 @@ public partial class menuJogadorCad : ContentPage
         if (selectedIndex != -1)
         {
             int notaJogador = int.Parse((string)picker.ItemsSource[selectedIndex]);
-            // Atribua a nota do jogador aqui
-            var viewModel = (JogadorViewModel)BindingContext;
+            
+            // Atribue a nota do jogador aqui
+            var viewModel = (JogadorViewModel) BindingContext;
             viewModel.NotaJogador = notaJogador;
         }
     }

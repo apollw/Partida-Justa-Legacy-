@@ -24,17 +24,15 @@
             Keyboard="Default"
             />
 
-        <Label x:Name="displayLabel"
-               Text="Seleciona a Nota do Jogador"
-               TextColor="GhostWhite"
-               FontSize="Subtitle"
-               HorizontalOptions="Center"
-               VerticalOptions="Center" />
-
-        <Picker x:Name="picker"
-        FontSize="Caption"
-        HorizontalOptions="Center"
-        SelectedIndexChanged="OnPickerSelectedIndexChanged"
+        <Picker 
+            x:Name="picker"
+            WidthRequest="250"
+            BackgroundColor="LightGray"    
+            Title="Selecione a nota do Jogador"
+                        
+            FontSize="Caption"
+            HorizontalOptions="Center"
+            SelectedIndexChanged="OnPickerSelectedIndexChanged"
         >
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
@@ -55,10 +53,8 @@
                 HorizontalOptions="Center"
                 Command="{Binding CadastrarCommand}"
                 Clicked="cadastrarJogador"
-         />
-        
-        
-        
+         />       
+    
     </VerticalStackLayout>
 
 </ContentPage>

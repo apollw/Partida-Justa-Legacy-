@@ -1,6 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using GoogleGson;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -19,11 +18,42 @@ namespace Partida_Justa.Models
     public class JogadorViewModel : INotifyPropertyChanged
     {
         //Properties
-        string nomeJogador; //This is private
-        int notaJogador;
+        private ModelJogador objJogador = new ModelJogador();
+        private bool repeticao;
+        //private string nomeJogador; //This is private
 
-        private ObservableCollection<JogadorModel> _jogadores;
-        public ObservableCollection<JogadorModel> Jogadores
+        private ObservableCollection<ModelJogador> _jogadores;
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public JogadorViewModel()
+        {
+            EnviarCommand = new Command(OnEnviar);
+            Jogadores = new ObservableCollection<ModelJogador>();
+        }
+
+        public ModelJogador ObjJogador { get => objJogador; set => objJogador = value; }
+
+        public string NomeJogador
+        {
+            get{ return objJogador.Nome; } 
+            set{ objJogador.Nome = value; 
+                 OnPropertyChanged(nameof(NomeJogador));
+            } 
+        }
+
+        public int NotaJogador
+        {
+            get { return objJogador.Nota; }
+            set
+            {
+                objJogador.Nota = value;
+                OnPropertyChanged(nameof(NotaJogador));
+            }
+        }
+
+        public bool Repeticao { get => repeticao; set => repeticao = value; }
+
+        public ObservableCollection<ModelJogador> Jogadores
         {
             get => _jogadores;
             set
@@ -32,36 +62,6 @@ namespace Partida_Justa.Models
                 OnPropertyChanged(nameof(Jogadores));
             }
         }
-        public string NomeJogador
-        {
-            get => nomeJogador;
-            set
-            {
-                if (nomeJogador == value)
-                    return;
-                nomeJogador = value;
-                OnPropertyChanged(nameof(NomeJogador));
-            }
-        }
-
-        public int NotaJogador
-        {
-            get => notaJogador;
-            set
-            {
-                if (notaJogador == value)
-                    return;
-                notaJogador = value;
-                OnPropertyChanged(nameof(NotaJogador));
-            }
-        }
-
-        //This is the specific event the .NET MAUI is registering
-        //and signing up for. This is a way of saying "hey, I've
-        //changed some code in my code behind; I'm doing some data
-        //binding to the User Interface (UI); .NET MAUI, please go
-        //update my user interface for me"
-        public event PropertyChangedEventHandler PropertyChanged;
 
         //A method that any of our ViewModels could call to raise this
         //event, because we need to raise this event to tell .NET MAUI
@@ -115,13 +115,7 @@ namespace Partida_Justa.Models
 
         /*Implementando Comando*/
         public ICommand EnviarCommand { get;}
-
-        public JogadorViewModel()
-        {
-            EnviarCommand = new Command(OnEnviar);
-            Jogadores = new ObservableCollection<JogadorModel>();
-        }
-
+       
         void OnEnviar()
         {           
             // Verifica se o arquivo jogadores.json existe
@@ -130,35 +124,30 @@ namespace Partida_Justa.Models
             if (File.Exists(filePath))
             {
                 // Se o arquivo existe, lê o conteúdo do arquivo e desserializa em uma lista de objetos JogadorModel
-
                 string json1 = File.ReadAllText(filePath);
-                List<JogadorModel> jogadores = new List<JogadorModel>();
+                List<ModelJogador> jogadores = new List<ModelJogador>();
 
                 if (json1 != string.Empty)
-                    jogadores = JsonConvert.DeserializeObject<List<JogadorModel>>(json1);
+                    jogadores = JsonConvert.DeserializeObject<List<ModelJogador>>(json1);
 
-                Jogadores = new ObservableCollection<JogadorModel>(jogadores);
+                Jogadores = new ObservableCollection<ModelJogador>(jogadores);
             }
 
-            // Cria uma nova instância da classe Jogador com os dados de entrada do usuário
-            var jogador = new JogadorModel { Nome = NomeJogador , Nota = NotaJogador};
+            //Tratar Repetição
+            foreach(ModelJogador element in Jogadores)
+            {
+                if (element.Nome ==objJogador.Nome)
+                {
+                    Repeticao = true;
+                    break;
+                }
+            }
 
-            // Adiciona o jogador à lista de jogadores
-            Jogadores.Add(jogador);
-
-            // Limpa a propriedade NomeJogador para que o usuário possa inserir um novo nome
-            NomeJogador = string.Empty;
-            NotaJogador = 0;
-
-            //// Serializa a lista de jogadores em uma string JSON
-            var json2 = JsonConvert.SerializeObject(Jogadores);
-
-            // Salva a string JSON em um arquivo local
-            File.WriteAllText(filePath, json2);
-
-            //Salva a string JSON em um arquivo local
-            var filePath2 = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
-            File.WriteAllText(filePath, json2);
+            if (objJogador.Nome != string.Empty && objJogador.Nota != 0 && Repeticao == false)
+            {
+                Jogadores.Add(objJogador);
+                File.WriteAllText(filePath, JsonConvert.SerializeObject(Jogadores));                
+            }
 
             //salva a string JSON em um arquivo no Desktop
             //var filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "jogadores.json");
@@ -172,13 +161,13 @@ namespace Partida_Justa.Models
             {
                 // Se o arquivo existe, lê o conteúdo do arquivo e desserializa em uma lista de objetos JogadorModel
                 string json = File.ReadAllText(filePath);
-                List<JogadorModel> jogadores = new List<JogadorModel>();
+                List<ModelJogador> jogadores = new List<ModelJogador>();
 
                 if (json != string.Empty)
-                    jogadores = JsonConvert.DeserializeObject<List<JogadorModel>>(json);
+                    jogadores = JsonConvert.DeserializeObject<List<ModelJogador>>(json);
 
-                Jogadores = new ObservableCollection<JogadorModel>(jogadores);
-            }    
+                Jogadores = new ObservableCollection<ModelJogador>(jogadores);
+            }
         }
 
         //O método abaixo apaga não os elementos do arquivo JSON em si, mas sim todo o arquivo
@@ -191,6 +180,5 @@ namespace Partida_Justa.Models
                 File.WriteAllText(filePath, string.Empty);
             }
         }
-
     }
 }
