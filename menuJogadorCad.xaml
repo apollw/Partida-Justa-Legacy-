@@ -20,7 +20,7 @@
             Text="{Binding NomeJogador}"
             WidthRequest="250"                 
             BackgroundColor="White" 
-            Placeholder="Digite o nome do jogador"             
+            Placeholder="Insira o nome do jogador"             
             Keyboard="Default"
             />
 
@@ -51,7 +51,6 @@
                 TextColor="Black"
                 BackgroundColor="LightGray"                    
                 HorizontalOptions="Center"
-                Command="{Binding CadastrarCommand}"
                 Clicked="cadastrarJogador"
          />       
     

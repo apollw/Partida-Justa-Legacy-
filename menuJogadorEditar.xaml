@@ -17,13 +17,12 @@
              
             HorizontalOptions="Center" />
 
-
-            <Entry
-            x:Name="NomeEntry"
+        <Entry
+            Text="{Binding NomeJogador}"
             WidthRequest="250"                 
             BackgroundColor="White" 
-            Placeholder="Digite o nome do jogador" 
-            Keyboard="Default"                  
+            Placeholder="Digite o nome do jogador"             
+            Keyboard="Default"
             />
 
         <Button

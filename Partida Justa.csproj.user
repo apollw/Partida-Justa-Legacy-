@@ -17,10 +17,16 @@
     <MauiXaml Update="menuJogadorCad.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="menuJogadorEdicao.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="menuJogadorEditar.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="menuJogadorExcluir.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="menuJogadorExclusao.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="menuJogadorLista.xaml">

@@ -13,23 +13,22 @@ public partial class menuJogadorExcluir : ContentPage
         // Define o BindingContext da página para uma nova instância da classe JogadorViewModel
         var viewModel = new JogadorViewModel();
         BindingContext = viewModel;
-        // Chama a função OnCarregar para carregar os dados do arquivo JSON
-        viewModel.OnExcluir();
-        await DisplayAlert("Alerta", "Lista Apagada com Sucesso!", "Concluir");
+
+       bool answer = await DisplayAlert("Alerta", "Tem certeza que quer excluir?", "Sim", "Não");
+        if (answer)
+        {
+            viewModel.OnExcluir();
+            await DisplayAlert("Alerta", "Lista Apagada com Sucesso!", "Concluir");
+        }
+        else
+            await Navigation.PopToRootAsync();
+           //await Navigation.PushAsync(new menuJogadorEditar());
 
     }
 
-    //private void excluirJogador(object sender, EventArgs e)
-    //{
-    //    // Obter o texto da caixa de texto
-    //    //string nome = NomeEntry.Text; //Eu utilizo o nome associado à entry para dispara o evento
-
-    //    //Ainda falta implementar um tratamento de erro caso o nome do jogador
-    //    //não exista na lista de jogadores
-
-    //    //Precisa-se implementar não um button, mas um search bar, que vai até a lista
-    //    //e resgata os valores
-    //    //Se o número estiver fora do intervalo, exibe alerta e não adiciona
-    //}
+    private async void apagarJogador(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new menuJogadorExclusao());
+    } 
 
 }

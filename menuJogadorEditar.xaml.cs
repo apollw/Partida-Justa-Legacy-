@@ -1,3 +1,5 @@
+using Partida_Justa.Models;
+
 namespace Partida_Justa;
 
 public partial class menuJogadorEditar : ContentPage
@@ -5,22 +7,31 @@ public partial class menuJogadorEditar : ContentPage
     public menuJogadorEditar()
     {
         InitializeComponent();
+        // Define o BindingContext da página para uma nova instância da classe JogadorViewModel
+        BindingContext = new JogadorViewModel();
     }
 
 
     private async void editarJogador(object sender, EventArgs e)
     {
+        // Obtém o ViewModel associado à página
+        JogadorViewModel viewModel = BindingContext as JogadorViewModel;
 
-        // Obter o texto da caixa de texto
-        //string nome = NomeEntry.Text; //Eu utilizo o nome associado à entry para dispara o evento
+        // Executa o comando EnviarCommand do ViewModel
+        if (viewModel.EnviarCommand.CanExecute(null))
+            viewModel.EnviarCommand.Execute(null);
 
-        //Ainda falta implementar um tratamento de erro caso o nome do jogador
-        //não exista na lista de jogadores
+        viewModel.OnEditar();
 
-        //Precisa-se implementar não um button, mas um search bar, que vai até a lista
-        //e resgata os valores
-        //Se o número estiver fora do intervalo, exibe alerta e não adiciona
-        
+        if (viewModel.ObjJogador.Nome == string.Empty)
+            await DisplayAlert("Alerta", "O nome do Jogador não foi informado!", "Concluir");
+        else if (viewModel.Encontrado == true)
+        {
+            await DisplayAlert("Alerta", "Jogador Encontrado!", "Concluir");
+            await Navigation.PushAsync(new menuJogadorEdicao());
+        }
+        else
+            await DisplayAlert("Alerta", "Jogador Não Encontrado!", "Concluir");
 
     }
 }

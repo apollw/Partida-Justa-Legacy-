@@ -20,8 +20,8 @@ namespace Partida_Justa.Models
         //Properties
         private ModelJogador objJogador = new ModelJogador();
         private bool repeticao;
-        //private string nomeJogador; //This is private
-
+        private bool encontrado;
+       
         private ObservableCollection<ModelJogador> _jogadores;
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -32,6 +32,11 @@ namespace Partida_Justa.Models
         }
 
         public ModelJogador ObjJogador { get => objJogador; set => objJogador = value; }
+        public bool Repeticao { get => repeticao; set => repeticao = value; }
+        public bool Encontrado { get => encontrado; set => encontrado = value; }
+
+        /*Implementando Comando*/
+        public ICommand EnviarCommand { get; }
 
         public string NomeJogador
         {
@@ -50,8 +55,6 @@ namespace Partida_Justa.Models
                 OnPropertyChanged(nameof(NotaJogador));
             }
         }
-
-        public bool Repeticao { get => repeticao; set => repeticao = value; }
 
         public ObservableCollection<ModelJogador> Jogadores
         {
@@ -113,9 +116,7 @@ namespace Partida_Justa.Models
         //    bool isBusy;
         //}
 
-        /*Implementando Comando*/
-        public ICommand EnviarCommand { get;}
-       
+    
         void OnEnviar()
         {           
             // Verifica se o arquivo jogadores.json existe
@@ -134,16 +135,22 @@ namespace Partida_Justa.Models
             }
 
             //Tratar Repetição
+            // Edem de Fernando -> EdemdeFernando-1
+            //Leanderson
+            //Leanderson -
+            //   Leanderson Silva   
+
+
             foreach(ModelJogador element in Jogadores)
             {
-                if (element.Nome ==objJogador.Nome)
+                if (element.Nome.Trim() == objJogador.Nome.Trim())
                 {
                     Repeticao = true;
                     break;
                 }
             }
 
-            if (objJogador.Nome != string.Empty && objJogador.Nota != 0 && Repeticao == false)
+            if (objJogador.Nome != String.Empty && objJogador.Nota != 0 && Repeticao == false)
             {
                 Jogadores.Add(objJogador);
                 File.WriteAllText(filePath, JsonConvert.SerializeObject(Jogadores));                
@@ -180,5 +187,98 @@ namespace Partida_Justa.Models
                 File.WriteAllText(filePath, string.Empty);
             }
         }
+
+        public void OnExcluirJogador()
+        {
+            // Verifica se o arquivo jogadores.json existe
+            var filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
+            if (File.Exists(filePath))
+            {
+                // Se o arquivo existe, lê o conteúdo do arquivo e desserializa em uma lista de objetos JogadorModel
+                string json = File.ReadAllText(filePath);
+                List<ModelJogador> jogadores = new List<ModelJogador>();
+
+                if (json != string.Empty)
+                    jogadores = JsonConvert.DeserializeObject<List<ModelJogador>>(json);
+
+                Jogadores = new ObservableCollection<ModelJogador>(jogadores); 
+            }
+
+            //Buscar Jogador pelo Nome
+            foreach (ModelJogador element in Jogadores)
+            {
+                if (element.Nome == NomeJogador)
+                {
+                    Encontrado = true;
+                    NomeJogador = string.Empty;
+                    NotaJogador = 0;  
+                    break;
+                }
+            }
+
+
+            /*public void OnExcluirJogador()
+{
+    // Verifica se o arquivo jogadores.json existe
+    var filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
+    if (File.Exists(filePath))
+    {
+        // Se o arquivo existe, lê o conteúdo do arquivo e desserializa em uma lista de objetos JogadorModel
+        string json = File.ReadAllText(filePath);
+        List<ModelJogador> jogadores = new List<ModelJogador>();
+
+        if (json != string.Empty)
+            jogadores = JsonConvert.DeserializeObject<List<ModelJogador>>(json);
+
+        Jogadores = new ObservableCollection<ModelJogador>(jogadores);
+    }
+
+    // Encontra o jogador com o nome especificado pela propriedade NomeJogador
+    ModelJogador jogador = Jogadores.FirstOrDefault(j => j.Nome == NomeJogador);
+    if (jogador != null)
+    {
+        // Se o jogador for encontrado, remove-o da lista de jogadores
+        Jogadores.Remove(jogador);
+        Encontrado = true;
+
+        // Serializa a lista atualizada de jogadores e escreve no arquivo jogadores.json
+        string json = JsonConvert.SerializeObject(Jogadores);
+        File.WriteAllText(filePath, json);
+    }
+}*/
+
+
+
+
+        }
+
+        public void OnEditar()
+        {
+            // Verifica se o arquivo jogadores.json existe
+            var filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
+            if (File.Exists(filePath))
+            {
+                // Se o arquivo existe, lê o conteúdo do arquivo e desserializa em uma lista de objetos JogadorModel
+                string json = File.ReadAllText(filePath);
+                List<ModelJogador> jogadores = new List<ModelJogador>();
+
+                if (json != string.Empty)
+                    jogadores = JsonConvert.DeserializeObject<List<ModelJogador>>(json);
+
+                Jogadores = new ObservableCollection<ModelJogador>(jogadores);
+            }
+
+            //Buscar Jogador pelo Nome
+            foreach (ModelJogador element in Jogadores)
+            {
+                if (element.Nome == NomeJogador)
+                {
+                    Encontrado = true;
+                    break;
+                }
+            }
+
+        }
+
     }
 }
