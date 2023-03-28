@@ -10,11 +10,9 @@
             Padding="30,0"
             VerticalOptions="Center">
 
-            <Label 
-            Text="Nome do Jogador"
-            TextColor="GhostWhite"
-            FontSize="Title"             
-            HorizontalOptions="Center" />
+        <Image
+            WidthRequest="200"            
+            Source="imagem_cad.png"/>
 
         <Entry
             Text="{Binding NomeJogador}"
@@ -27,13 +25,13 @@
         <Picker 
             x:Name="picker"
             WidthRequest="250"
-            BackgroundColor="LightGray"    
+            BackgroundColor="LightGray"   
             Title="Selecione a nota do Jogador"
                         
             FontSize="Caption"
             HorizontalOptions="Center"
-            SelectedIndexChanged="OnPickerSelectedIndexChanged"
-        >
+            SelectedIndexChanged="OnPickerSelectedIndexChanged">
+            
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>1</x:String>
@@ -49,7 +47,8 @@
                 WidthRequest="200"
                 Text="Cadastrar Jogador"
                 TextColor="Black"
-                BackgroundColor="LightGray"                    
+                BackgroundColor="GhostWhite"
+                BorderColor="Green"
                 HorizontalOptions="Center"
                 Clicked="cadastrarJogador"
          />       

@@ -15,15 +15,15 @@ public partial class menuJogadorLista : ContentPage
         // Chama a função OnCarregar para carregar os dados do arquivo JSON
         viewModel.OnCarregar();
 
-        var listView = new ListView();
-        listView.ItemsSource = viewModel.Jogadores; // Jogadores é uma ObservableCollection<JogadorModel>
-        listView.ItemTemplate = new DataTemplate(() =>
-        {
-            var textCell = new TextCell();
-            textCell.SetBinding(TextCell.TextProperty, "Nome");
-            textCell.SetBinding(TextCell.DetailProperty, "Nota");
-            return textCell;
-        });
-        Content = listView;      
+        //var listView = new ListView();
+        //listView.ItemsSource = viewModel.Jogadores; // Jogadores é uma ObservableCollection<JogadorModel>
+        //listView.ItemTemplate = new DataTemplate(() =>
+        //{
+        //    var textCell = new TextCell();
+        //    textCell.SetBinding(TextCell.TextProperty, "Nome");
+        //    textCell.SetBinding(TextCell.DetailProperty, "Nota");
+        //    return textCell;
+        //});
+        //Content = listView;      
     }
 }

@@ -12,18 +12,20 @@
 
         <Button
                 WidthRequest="200"
-                Text="Apagar Jogador"
-                TextColor="Black"
-                BackgroundColor="LightGray"                    
+                Text="Excluir Jogador"
+                TextColor="Black"                
+                BackgroundColor="GhostWhite"
+                BorderColor="Green"
                 HorizontalOptions="Center"
                 Clicked="apagarJogador"
                 />
 
         <Button
                 WidthRequest="200"
-                Text="Apagar Lista de Jogadores"
+                Text="Limpar a Lista"
                 TextColor="Black"
-                BackgroundColor="LightGray"                    
+                BackgroundColor="GhostWhite"
+                BorderColor="Green"                   
                 HorizontalOptions="Center"
                 Clicked="apagarLista"
                 />

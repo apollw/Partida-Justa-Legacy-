@@ -14,21 +14,27 @@ public partial class menuJogadorExcluir : ContentPage
         var viewModel = new JogadorViewModel();
         BindingContext = viewModel;
 
-       bool answer = await DisplayAlert("Alerta", "Tem certeza que quer excluir?", "Sim", "Não");
+       bool answer = await DisplayAlert("Alerta", "Tem certeza que deseja limpar a lista?", "Sim", "Não");
         if (answer)
         {
-            viewModel.OnExcluir();
-            await DisplayAlert("Alerta", "Lista Apagada com Sucesso!", "Concluir");
+            bool answer2 = await DisplayAlert("Alerta", "A exclusão não pode ser desfeita. Deseja continuar?", "Sim", "Não");
+            if (answer2)
+            {
+                viewModel.OnExcluir();
+                await DisplayAlert("Alerta", "Lista Apagada com Sucesso!", "Concluir");
+                await Navigation.PopAsync();
+            }
         }
         else
-            await Navigation.PopToRootAsync();
-           //await Navigation.PushAsync(new menuJogadorEditar());
-
+        {
+            await DisplayAlert("Alerta", "A lista não foi alterada", "Concluir");
+            await Navigation.PopAsync();
+        }
     }
 
     private async void apagarJogador(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new menuJogadorExclusao());
-    } 
+        //await Navigation.PushAsync(new menuJogadorExclusao());
+    }
 
 }

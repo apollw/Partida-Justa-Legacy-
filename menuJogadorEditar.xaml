@@ -3,37 +3,62 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Partida_Justa.menuJogadorEditar"
              BackgroundImageSource="background_modelo.png"
+             xmlns:viewmodel="clr-namespace:Partida_Justa.Models"
              Title="Editar Jogadores">
 
-    <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+    <Grid RowDefinitions="25,Auto,*"
+          ColumnDefinitions=".75*,.25*"
+          Padding="10"
+          RowSpacing="10"
+          ColumnSpacing="10"
+          >
 
-        <Label 
-            Text="Pesquisa de Jogador"
-            TextColor="GhostWhite"
-            FontSize="Title"
-             
-            HorizontalOptions="Center" />
+        <Label Text="Para editar, arraste para esquerda"
+               FontSize="Body"
+               TextColor="Green"
+               FontAttributes="Bold"
+               HeightRequest="25"/>
 
-        <Entry
-            Text="{Binding NomeJogador}"
-            WidthRequest="250"                 
-            BackgroundColor="White" 
-            Placeholder="Digite o nome do jogador"             
-            Keyboard="Default"
-            />
+        <CollectionView Grid.Row="2" Grid.ColumnSpan="2"
+                        ItemsSource="{Binding Jogadores}">
+            <CollectionView.ItemTemplate>
+                
+                <DataTemplate>                    
+                    <SwipeView>                         
+                        <SwipeView.RightItems>
+                            <SwipeItem Text="Editar"
+                                       BackgroundColor="LightCyan"                                       
+                                       CommandParameter="{Binding .}"/>
+                            <SwipeItem Text="Excluir"
+                                       BackgroundColor="Red"                                       
+                                       CommandParameter="{Binding .}"/>
+                        </SwipeView.RightItems>
 
-        <Button
-                WidthRequest="200"
-                Text="Editar Jogador"
-                TextColor="Black"
-                BackgroundColor="LightGray"                    
-                HorizontalOptions="Center"
-                Clicked="editarJogador"
-                />
+                        <Grid Padding="0,5">                            
 
-    </VerticalStackLayout>
-    
+                            <Frame BorderColor="Gray"
+                                   CornerRadius="5"
+                                   Padding="8">
+                                <StackLayout>                                   
+                                    <Label Text="{Binding Nome}"
+                                           FontSize="20"
+                                           FontAttributes="Bold" />
+                                    <BoxView Color="Gray"
+                                             HeightRequest="2"
+                                             HorizontalOptions="Fill" />
+                                    <Label Text="Nota:"
+                                           FontSize="15"
+                                           />
+                                    <Label Text="{Binding Nota}"/>
+                                </StackLayout>
+                            </Frame>
+
+                        </Grid>
+                    </SwipeView>                    
+                </DataTemplate>
+                
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+   
 </ContentPage>

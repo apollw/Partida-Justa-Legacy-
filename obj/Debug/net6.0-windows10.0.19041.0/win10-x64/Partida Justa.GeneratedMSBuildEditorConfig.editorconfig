@@ -40,12 +40,6 @@ build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.menuJogadorC
 build_metadata.AdditionalFiles.TargetPath = menuJogadorCad.xaml
 build_metadata.AdditionalFiles.RelativePath = menuJogadorCad.xaml
 
-[C:/Users/lssilva/source/repos/Partida-Justa/menuJogadorEdicao.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.menuJogadorEdicao.xaml
-build_metadata.AdditionalFiles.TargetPath = menuJogadorEdicao.xaml
-build_metadata.AdditionalFiles.RelativePath = menuJogadorEdicao.xaml
-
 [C:/Users/lssilva/source/repos/Partida-Justa/menuJogadorEditar.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.menuJogadorEditar.xaml
@@ -57,12 +51,6 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.menuJogadorExcluir.xaml
 build_metadata.AdditionalFiles.TargetPath = menuJogadorExcluir.xaml
 build_metadata.AdditionalFiles.RelativePath = menuJogadorExcluir.xaml
-
-[C:/Users/lssilva/source/repos/Partida-Justa/menuJogadorExclusao.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.menuJogadorExclusao.xaml
-build_metadata.AdditionalFiles.TargetPath = menuJogadorExclusao.xaml
-build_metadata.AdditionalFiles.RelativePath = menuJogadorExclusao.xaml
 
 [C:/Users/lssilva/source/repos/Partida-Justa/menuJogadorLista.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

@@ -994,8 +994,14 @@
     <AppxPackagedFile Include="C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\imagem_cad.scale-100.png">
+      <PackagePath>imagem_cad.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\imagem_centro.scale-100.png">
       <PackagePath>imagem_centro.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\imagem_sorteio.scale-100.png">
+      <PackagePath>imagem_sorteio.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menujogador.scale-100.png">
       <PackagePath>menujogador.scale-100.png</PackagePath>

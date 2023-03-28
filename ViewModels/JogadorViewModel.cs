@@ -41,7 +41,7 @@ namespace Partida_Justa.Models
         public string NomeJogador
         {
             get{ return objJogador.Nome; } 
-            set{ objJogador.Nome = value; 
+            set{ objJogador.Nome = value;
                  OnPropertyChanged(nameof(NomeJogador));
             } 
         }
@@ -79,44 +79,7 @@ namespace Partida_Justa.Models
             //specific name of the property
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName)); 
         }
-
-        /*Fazendo a mesma coisa acima, mas usando CommunityTookit.Mvvm*/
-
-        //Instead of inheriting and implementing INotifyPropertyChanged,
-        //we can do that:
-
-        //Primeira opção
-        //[INotifyPropertyChanged]
-
-        //public partial class JogadorViewModel
-        //{
-        //    public JogadorViewModel()
-        //    {
-              
-        //    }
-        //    string nomeJogador;
-        //}
-
-
-        //Segunda opção
-        //public partial class JogadorViewModel : ObservableObject
-        ////Inheriting from this base class will automatically implement
-        ////INotifyPropertyChanged, and additionally, INotifyPropertyChanging
-        //{
-        //    public JogadorViewModel() 
-        //    {
-                
-        //    }
-        //    //Uma ObservableProperty para cada Property
-        //    [ObservableProperty]
-        //    string nomeJogador;
-
-        //    [ObservableObject]
-        //    [AlsoNotifyChangeFor(nameof(IsNotBusy))]
-        //    bool isBusy;
-        //}
-
-    
+            
         void OnEnviar()
         {           
             // Verifica se o arquivo jogadores.json existe
@@ -151,7 +114,7 @@ namespace Partida_Justa.Models
             }
 
             if (objJogador.Nome != String.Empty && objJogador.Nota != 0 && Repeticao == false)
-            {
+            {               
                 Jogadores.Add(objJogador);
                 File.WriteAllText(filePath, JsonConvert.SerializeObject(Jogadores));                
             }
@@ -201,7 +164,7 @@ namespace Partida_Justa.Models
                 if (json != string.Empty)
                     jogadores = JsonConvert.DeserializeObject<List<ModelJogador>>(json);
 
-                Jogadores = new ObservableCollection<ModelJogador>(jogadores); 
+                Jogadores = new ObservableCollection<ModelJogador>(jogadores);
             }
 
             //Buscar Jogador pelo Nome
@@ -211,16 +174,16 @@ namespace Partida_Justa.Models
                 {
                     Encontrado = true;
                     NomeJogador = string.Empty;
-                    NotaJogador = 0;  
+                    NotaJogador = 0;
                     break;
                 }
             }
-
+        }
 
             /*public void OnExcluirJogador()
-{
-    // Verifica se o arquivo jogadores.json existe
-    var filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
+             * {
+            // Verifica se o arquivo jogadores.json existe
+                  var filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
     if (File.Exists(filePath))
     {
         // Se o arquivo existe, lê o conteúdo do arquivo e desserializa em uma lista de objetos JogadorModel
@@ -244,13 +207,7 @@ namespace Partida_Justa.Models
         // Serializa a lista atualizada de jogadores e escreve no arquivo jogadores.json
         string json = JsonConvert.SerializeObject(Jogadores);
         File.WriteAllText(filePath, json);
-    }
-}*/
-
-
-
-
-        }
+    }*/
 
         public void OnEditar()
         {
@@ -267,18 +224,6 @@ namespace Partida_Justa.Models
 
                 Jogadores = new ObservableCollection<ModelJogador>(jogadores);
             }
-
-            //Buscar Jogador pelo Nome
-            foreach (ModelJogador element in Jogadores)
-            {
-                if (element.Nome == NomeJogador)
-                {
-                    Encontrado = true;
-                    break;
-                }
-            }
-
         }
-
     }
 }

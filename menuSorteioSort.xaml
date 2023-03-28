@@ -11,31 +11,44 @@
             Padding="30,0"
             VerticalOptions="Center">
 
-        <Label 
-               Text="Tamanho das Equipes"
-               TextColor="GhostWhite"
-               FontSize="Title"
-               HorizontalOptions="Center"
-               VerticalOptions="Center" />
+        <Image
+            WidthRequest="200"            
+            Source="imagem_sorteio.png"/>
 
-        <Label x:Name="displayLabel"
-               Text="Jogadores"
-               TextColor="GhostWhite"
-               FontSize="Small"
-               HorizontalOptions="Center"
-               VerticalOptions="Center" />
-        
-        <Slider Maximum="11"
-                ValueChanged="OnSliderValueChanged" />
+            <Picker 
+            x:Name="picker"
+            WidthRequest="250"
+            BackgroundColor="LightGray"   
+            Title="Selecione o nº de jogadores por equipe"
+                        
+            FontSize="Caption"
+            HorizontalOptions="Center"
+            SelectedIndexChanged="OnPickerSelectedIndexChanged">
 
-            <Button
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                    <x:String>2</x:String>
+                    <x:String>3</x:String>
+                    <x:String>4</x:String>
+                    <x:String>5</x:String>
+                    <x:String>6</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+        <Button
                 WidthRequest="200"
                 Text="Iniciar Sorteio"
                 TextColor="Black"
-                BackgroundColor="LightGray"                    
+                BackgroundColor="GhostWhite"
+                BorderColor="Green"                   
                 HorizontalOptions="Center"
                 Clicked="sortearEquipes"
                 />
 
     </VerticalStackLayout>
+
 </ContentPage>
+
+
+
