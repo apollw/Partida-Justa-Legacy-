@@ -28,10 +28,12 @@
                         <SwipeView.RightItems>
                             <SwipeItem Text="Editar"
                                        BackgroundColor="LightCyan"                                       
-                                       CommandParameter="{Binding .}"/>
+                                       CommandParameter="{Binding .}"/>                           
                             <SwipeItem Text="Excluir"
-                                       BackgroundColor="Red"                                       
+                                       BackgroundColor="Red"
+                                       Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:JogadorViewModel}},Path=DeleteCommand}"
                                        CommandParameter="{Binding .}"/>
+
                         </SwipeView.RightItems>
 
                         <Grid Padding="0,5">                            

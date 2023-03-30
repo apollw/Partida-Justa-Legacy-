@@ -32,9 +32,4 @@ public partial class menuJogadorExcluir : ContentPage
         }
     }
 
-    private async void apagarJogador(object sender, EventArgs e)
-    {
-        //await Navigation.PushAsync(new menuJogadorExclusao());
-    }
-
 }

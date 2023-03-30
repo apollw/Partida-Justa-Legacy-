@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Microsoft.Maui.Controls;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -29,6 +30,7 @@ namespace Partida_Justa.Models
         {
             EnviarCommand = new Command(OnEnviar);
             Jogadores = new ObservableCollection<ModelJogador>();
+            
         }
 
         public ModelJogador ObjJogador { get => objJogador; set => objJogador = value; }
@@ -49,9 +51,7 @@ namespace Partida_Justa.Models
         public int NotaJogador
         {
             get { return objJogador.Nota; }
-            set
-            {
-                objJogador.Nota = value;
+            set{ objJogador.Nota = value;
                 OnPropertyChanged(nameof(NotaJogador));
             }
         }
@@ -59,9 +59,7 @@ namespace Partida_Justa.Models
         public ObservableCollection<ModelJogador> Jogadores
         {
             get => _jogadores;
-            set
-            {
-                _jogadores = value;
+            set{ _jogadores = value;
                 OnPropertyChanged(nameof(Jogadores));
             }
         }
@@ -79,7 +77,16 @@ namespace Partida_Justa.Models
             //specific name of the property
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName)); 
         }
-            
+              
+        public void OnExcluirJogador(ModelJogador jogador)
+        {
+            Jogadores.Remove(jogador);
+
+            var filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
+            File.WriteAllText(filePath, JsonConvert.SerializeObject(Jogadores));
+        }
+
+
         void OnEnviar()
         {           
             // Verifica se o arquivo jogadores.json existe
@@ -88,23 +95,16 @@ namespace Partida_Justa.Models
             if (File.Exists(filePath))
             {
                 // Se o arquivo existe, lê o conteúdo do arquivo e desserializa em uma lista de objetos JogadorModel
-                string json1 = File.ReadAllText(filePath);
+                string json = File.ReadAllText(filePath);
                 List<ModelJogador> jogadores = new List<ModelJogador>();
 
-                if (json1 != string.Empty)
-                    jogadores = JsonConvert.DeserializeObject<List<ModelJogador>>(json1);
+                if (json != string.Empty)
+                    jogadores = JsonConvert.DeserializeObject<List<ModelJogador>>(json);
 
                 Jogadores = new ObservableCollection<ModelJogador>(jogadores);
             }
 
-            //Tratar Repetição
-            // Edem de Fernando -> EdemdeFernando-1
-            //Leanderson
-            //Leanderson -
-            //   Leanderson Silva   
-
-
-            foreach(ModelJogador element in Jogadores)
+             foreach(ModelJogador element in Jogadores)
             {
                 if (element.Nome.Trim() == objJogador.Nome.Trim())
                 {
@@ -146,84 +146,9 @@ namespace Partida_Justa.Models
             var filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
             if (File.Exists(filePath))
             {
-                // Se o arquivo existe, lê o conteúdo do arquivo e desserializa em uma lista de objetos JogadorModel
+                // Se o arquivo existe, lê o conteúdo do arquivo e apaga tudo
                 File.WriteAllText(filePath, string.Empty);
             }
-        }
-
-        public void OnExcluirJogador()
-        {
-            // Verifica se o arquivo jogadores.json existe
-            var filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
-            if (File.Exists(filePath))
-            {
-                // Se o arquivo existe, lê o conteúdo do arquivo e desserializa em uma lista de objetos JogadorModel
-                string json = File.ReadAllText(filePath);
-                List<ModelJogador> jogadores = new List<ModelJogador>();
-
-                if (json != string.Empty)
-                    jogadores = JsonConvert.DeserializeObject<List<ModelJogador>>(json);
-
-                Jogadores = new ObservableCollection<ModelJogador>(jogadores);
-            }
-
-            //Buscar Jogador pelo Nome
-            foreach (ModelJogador element in Jogadores)
-            {
-                if (element.Nome == NomeJogador)
-                {
-                    Encontrado = true;
-                    NomeJogador = string.Empty;
-                    NotaJogador = 0;
-                    break;
-                }
-            }
-        }
-
-            /*public void OnExcluirJogador()
-             * {
-            // Verifica se o arquivo jogadores.json existe
-                  var filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
-    if (File.Exists(filePath))
-    {
-        // Se o arquivo existe, lê o conteúdo do arquivo e desserializa em uma lista de objetos JogadorModel
-        string json = File.ReadAllText(filePath);
-        List<ModelJogador> jogadores = new List<ModelJogador>();
-
-        if (json != string.Empty)
-            jogadores = JsonConvert.DeserializeObject<List<ModelJogador>>(json);
-
-        Jogadores = new ObservableCollection<ModelJogador>(jogadores);
-    }
-
-    // Encontra o jogador com o nome especificado pela propriedade NomeJogador
-    ModelJogador jogador = Jogadores.FirstOrDefault(j => j.Nome == NomeJogador);
-    if (jogador != null)
-    {
-        // Se o jogador for encontrado, remove-o da lista de jogadores
-        Jogadores.Remove(jogador);
-        Encontrado = true;
-
-        // Serializa a lista atualizada de jogadores e escreve no arquivo jogadores.json
-        string json = JsonConvert.SerializeObject(Jogadores);
-        File.WriteAllText(filePath, json);
-    }*/
-
-        public void OnEditar()
-        {
-            // Verifica se o arquivo jogadores.json existe
-            var filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
-            if (File.Exists(filePath))
-            {
-                // Se o arquivo existe, lê o conteúdo do arquivo e desserializa em uma lista de objetos JogadorModel
-                string json = File.ReadAllText(filePath);
-                List<ModelJogador> jogadores = new List<ModelJogador>();
-
-                if (json != string.Empty)
-                    jogadores = JsonConvert.DeserializeObject<List<ModelJogador>>(json);
-
-                Jogadores = new ObservableCollection<ModelJogador>(jogadores);
-            }
-        }
+        }        
     }
 }

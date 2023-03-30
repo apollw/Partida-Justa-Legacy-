@@ -10,17 +10,7 @@
             Padding="30,0"
             VerticalOptions="Center">
 
-        <Button
-                WidthRequest="200"
-                Text="Excluir Jogador"
-                TextColor="Black"                
-                BackgroundColor="GhostWhite"
-                BorderColor="Green"
-                HorizontalOptions="Center"
-                Clicked="apagarJogador"
-                />
-
-        <Button
+         <Button
                 WidthRequest="200"
                 Text="Limpar a Lista"
                 TextColor="Black"

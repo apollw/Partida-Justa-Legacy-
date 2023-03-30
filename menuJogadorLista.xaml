@@ -5,20 +5,6 @@
              BackgroundImageSource="background_modelo.png"
              Title="Lista de Jogadores">
 
-    <!--<VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
-
-        <ListView>
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextCell Text="{Binding Nome}" Detail="{Binding Nota}"/>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </VerticalStackLayout>-->
-
     <Grid RowDefinitions="0,Auto,*"
           ColumnDefinitions=".75*,.25*"
           Padding="10"
