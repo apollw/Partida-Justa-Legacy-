@@ -43,7 +43,7 @@
                 BackgroundColor="GhostWhite"
                 BorderColor="Green"                   
                 HorizontalOptions="Center"
-                Clicked="sortearEquipes"
+                Clicked="sortearTimes"
                 />
 
     </VerticalStackLayout>

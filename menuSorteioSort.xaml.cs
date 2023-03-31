@@ -7,18 +7,20 @@ public partial class menuSorteioSort : ContentPage
 	public menuSorteioSort()
 	{
 		InitializeComponent();
-        BindingContext = new JogadorViewModel();
+        BindingContext = new TimeViewModel();
     }
 
-
-    private async void sortearEquipes(object sender, EventArgs e)
+    private async void sortearTimes(object sender, EventArgs e)
     {
-        //// Obtém o ViewModel associado à página
-        //JogadorViewModel viewModel = BindingContext as JogadorViewModel;
+        // Obtém o ViewModel associado à página
+        TimeViewModel viewModel = BindingContext as TimeViewModel;
 
-        //// Executa o comando EnviarCommand do ViewModel
-        //if (viewModel.EnviarCommand.CanExecute(null))
-        //    viewModel.EnviarCommand.Execute(null); 
+        // Executa o comando EnviarCommand do ViewModel
+        if (viewModel.SortearCommand.CanExecute(null))
+            viewModel.SortearCommand.Execute(null);
+
+        if (viewModel.Criado == true)
+            await DisplayAlert("Alerta", "Times criados com sucesso!", "Concluir");
 
     }
 
@@ -29,13 +31,12 @@ public partial class menuSorteioSort : ContentPage
 
         if (selectedIndex != -1)
         {
-            int notaJogador = int.Parse((string)picker.ItemsSource[selectedIndex]);
+            int numeroJog = int.Parse((string)picker.ItemsSource[selectedIndex]);
 
             // Atribue a nota do jogador aqui
-            var viewModel = (JogadorViewModel)BindingContext;
-            //viewModel.NotaJogador = notaJogador;
+            var viewModel = (TimeViewModel)BindingContext;
+            viewModel.ObjTime.NumeroJog = numeroJog;
         }
     }
-
 
 }

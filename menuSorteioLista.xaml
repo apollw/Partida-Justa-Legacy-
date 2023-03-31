@@ -5,12 +5,59 @@
              BackgroundImageSource="background_modelo.png"
              Title="Jogadores Sorteados">
 
-    <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
-        
-        
+           
+        <!--<Grid RowDefinitions="0,Auto,*"
+          ColumnDefinitions=".75*,.25*"
+          Padding="10"
+          RowSpacing="10"
+          ColumnSpacing="10"
+          >
 
-    </VerticalStackLayout>
+            <CollectionView Grid.Row="2" Grid.ColumnSpan="2"
+                        ItemsSource="{Binding Times}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+
+                        <Grid Padding="0,5">
+
+                            <Frame BorderColor="Gray"
+                                   CornerRadius="5"
+                                   Padding="8">
+                                <StackLayout>
+                                    <Label Text="{Binding jogadorTime.Nome}"
+                                           FontSize="20"
+                                           FontAttributes="Bold" />
+                                    <BoxView Color="Gray"
+                                             HeightRequest="2"
+                                             HorizontalOptions="Fill" />
+                                    <Label Text="Nota:"
+                                           FontSize="15"/>
+                                    <Label Text="{Binding jogadorTime.Nota}"/>
+                                </StackLayout>
+                            </Frame>
+
+                        </Grid>
+                    </DataTemplate>
+
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>-->
+
+    <StackLayout>
+        <Label Text="{Binding NomeTime, StringFormat='Nome do Time: {0}'}" />
+        <Label Text="{Binding NivelTime, StringFormat='Nível do Time: {0}'}" />
+        <Label Text="{Binding NumeroJog, StringFormat='Número de Jogadores: {0}'}" />
+        <Label Text="Jogadores:" />
+        <StackLayout BindableLayout.ItemsSource="{Binding JogadorTime}">
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Label Text="{Binding NomeJogador, StringFormat='Nome: {0}'}" />
+                        <Label Text="{Binding NotaJogador, StringFormat='Nota: {0}'}" />
+                    </StackLayout>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </StackLayout>
+    </StackLayout>
+
 </ContentPage>
