@@ -24,6 +24,7 @@ namespace Partida_Justa.Models
 
         //Comandos
         public ICommand SortearCommand { get; }
+        public ICommand CarregarCommand { get; }
 
         //Propriedades
 
@@ -36,6 +37,7 @@ namespace Partida_Justa.Models
         {
           Jogadores = new ObservableCollection<ModelJogador>();
           SortearCommand = new Command(OnSortearTime);
+          CarregarCommand = new Command(OnCarregarTimes);
         }
 
         public string NomeJogador
@@ -173,8 +175,7 @@ namespace Partida_Justa.Models
 
             // Salva a string JSON em um arquivo
             string filePath2 = Path.Combine(FileSystem.AppDataDirectory, "times.json");
-            File.WriteAllText(filePath, json2);
-
+            File.WriteAllText(filePath2, json2);
 
         }
 

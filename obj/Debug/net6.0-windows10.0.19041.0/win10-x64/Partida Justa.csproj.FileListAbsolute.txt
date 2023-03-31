@@ -716,7 +716,9 @@ C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png
+C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\imagem_cad.scale-100.png
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\imagem_centro.scale-100.png
+C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\imagem_sorteio.scale-100.png
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menujogador.scale-100.png
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menujogador.scale-125.png
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menujogador.scale-150.png
@@ -759,5 +761,3 @@ C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
-C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\imagem_cad.scale-100.png
-C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\imagem_sorteio.scale-100.png

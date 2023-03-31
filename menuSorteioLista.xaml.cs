@@ -1,5 +1,7 @@
-using Microsoft.UI.Xaml.Controls;
+//using Microsoft.UI.Xaml.Controls;
+using Newtonsoft.Json;
 using Partida_Justa.Models;
+using System.Collections.ObjectModel;
 
 namespace Partida_Justa;
 
@@ -11,14 +13,13 @@ public partial class menuSorteioLista : ContentPage
         var viewModel = new TimeViewModel();
         BindingContext = viewModel;
 
-        // Chama a função OnCarregar para carregar os dados do arquivo JSON
-        viewModel.OnCarregarTimes();
+        // Executa o comando EnviarCommand do ViewModel
+        if (viewModel.CarregarCommand.CanExecute(null))
+            viewModel.CarregarCommand.Execute(null);
 
-        //var teamBox = new TeamBox(); // TeamBox é o nome da sua classe que contém o código XAML acima
-        //teamBox.BindingContext = viewModel.Times;
-        //Content = teamBox;
+        // Chama a função OnCarregar para carregar os dados do arquivo JSON
+        //viewModel.OnCarregarTimes();
     }
-          
 
     //private void OnButtonClicked(object sender, EventArgs e)
     //{
@@ -33,9 +34,5 @@ public partial class menuSorteioLista : ContentPage
     //        }
     //    }
     //}
-
-
-
-
 
 }

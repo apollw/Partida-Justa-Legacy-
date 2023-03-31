@@ -240,7 +240,9 @@ C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-maccatalyst\maccata
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\menusorteio@2x.png
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\menusorteio@3x.png
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\background_modelo.png
+C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\imagem_cad.png
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\imagem_centro.png
+C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\imagem_sorteio.png
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\mauiimage.stamp
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\f\MauiInfo.plist
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\mauifont.stamp
@@ -266,5 +268,3 @@ C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-maccatalyst\maccata
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\Partida Justa.pdb
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\Partida Justa.genruntimeconfig.cache
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\ref\Partida Justa.dll
-C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\imagem_cad.png
-C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\imagem_sorteio.png
