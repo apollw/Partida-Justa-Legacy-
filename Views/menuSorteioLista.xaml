@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Partida_Justa.menuSorteioLista"             
+             BackgroundImageSource="background_moderno.png"
+             Title="Jogadores Sorteados">
+
+    <CollectionView ItemsSource="{Binding Times}">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <StackLayout Padding="5"
+                             WidthRequest="350">
+                    <Frame BorderColor="Gray"                                                    
+                           CornerRadius="25"
+                           Padding="22">
+
+                        <StackLayout>
+                            <Label Text="{Binding NomeTime, StringFormat='Nome do Time: {0}'}"
+                                   FontSize="20"
+                                   FontAttributes="Bold" />
+                            <BoxView Color="Gray"
+                                     HeightRequest="2"
+                                     HorizontalOptions="Fill"
+                                     />
+
+                            <!--Aqui ficam as informações dos jogadores de cada time-->
+
+                            <StackLayout BindableLayout.ItemsSource="{Binding JogadorTime}">
+                                <BindableLayout.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackLayout>
+                                            <Label Text="{Binding NomeJogador, StringFormat='Nome: {0}'}" />
+                                        </StackLayout>
+                                    </DataTemplate>
+                                </BindableLayout.ItemTemplate>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+
+</ContentPage>

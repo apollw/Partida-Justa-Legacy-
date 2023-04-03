@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=netstandard"
+             x:Class="Partida_Justa.menuSorteioSort"
+             BackgroundImageSource="background_moderno.png"
+             Title="Sorteio de Jogadores">
+
+    <VerticalStackLayout            
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+        <Image
+            WidthRequest="200"            
+            Source="imagem_sorteio.png"/>
+
+            <Picker 
+            x:Name="picker"
+            WidthRequest="250"
+            BackgroundColor="LightGray"   
+            Title="Selecione o nº de jogadores por equipe"
+                        
+            FontSize="Caption"
+            HorizontalOptions="Center"
+            SelectedIndexChanged="OnPickerSelectedIndexChanged">
+
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                    <x:String>2</x:String>
+                    <x:String>3</x:String>
+                    <x:String>4</x:String>
+                    <x:String>5</x:String>
+                    <x:String>6</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+        <Button
+                WidthRequest="200"
+                Text="Iniciar Sorteio"
+                TextColor="Black"
+                BackgroundColor="GhostWhite"
+                BorderColor="Green"                   
+                HorizontalOptions="Center"
+                Clicked="sortearTimes"
+                />
+
+    </VerticalStackLayout>
+
+</ContentPage>
+
+
+

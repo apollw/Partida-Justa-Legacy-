@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\Leanderson\source\repos\Partida-Justa\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-04-03T20:56:53.498</Modified>
+      <Modified>2023-04-03T21:30:44.434</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-04-03T20:51:59.730</Modified>
+      <Modified>2023-04-03T21:30:43.863</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Partida Justa.runtimeconfig.json">
       <PackagePath>Partida Justa.runtimeconfig.json</PackagePath>
-      <Modified>2023-04-03T20:51:59.565</Modified>
+      <Modified>2023-04-03T21:30:43.610</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Partida Justa.dll">
       <PackagePath>Partida Justa.dll</PackagePath>
-      <Modified>2023-04-03T20:56:51.375</Modified>
+      <Modified>2023-04-03T21:30:42.087</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Partida Justa.exe</PackagePath>
-      <Modified>2023-04-03T20:56:51.386</Modified>
+      <Modified>2023-04-03T21:30:42.124</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.14\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1071,7 +1071,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\Partida Justa.deps.json">
       <PackagePath>Partida Justa.deps.json</PackagePath>
-      <Modified>2023-04-03T20:56:53.237</Modified>
+      <Modified>2023-04-03T21:30:44.198</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\.nuget\packages\microsoft.maui.controls.ref.win\6.0.552\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -1091,23 +1091,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashscreenSplashScreen.scale-100.png">
       <PackagePath>splashscreenSplashScreen.scale-100.png</PackagePath>
-      <Modified>2023-04-03T20:51:56.859</Modified>
+      <Modified>2023-04-03T21:01:04.159</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashscreenSplashScreen.scale-125.png">
       <PackagePath>splashscreenSplashScreen.scale-125.png</PackagePath>
-      <Modified>2023-04-03T20:51:56.885</Modified>
+      <Modified>2023-04-03T21:01:04.194</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashscreenSplashScreen.scale-150.png">
       <PackagePath>splashscreenSplashScreen.scale-150.png</PackagePath>
-      <Modified>2023-04-03T20:51:56.916</Modified>
+      <Modified>2023-04-03T21:01:04.242</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashscreenSplashScreen.scale-200.png">
       <PackagePath>splashscreenSplashScreen.scale-200.png</PackagePath>
-      <Modified>2023-04-03T20:51:56.964</Modified>
+      <Modified>2023-04-03T21:01:04.308</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashscreenSplashScreen.scale-400.png">
       <PackagePath>splashscreenSplashScreen.scale-400.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.118</Modified>
+      <Modified>2023-04-03T21:01:04.556</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -1119,187 +1119,187 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2023-04-03T20:51:57.155</Modified>
+      <Modified>2023-04-03T21:01:04.610</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.406</Modified>
+      <Modified>2023-04-03T21:01:04.905</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.422</Modified>
+      <Modified>2023-04-03T21:01:04.923</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.440</Modified>
+      <Modified>2023-04-03T21:01:04.949</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.470</Modified>
+      <Modified>2023-04-03T21:01:04.977</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.549</Modified>
+      <Modified>2023-04-03T21:01:05.073</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.197</Modified>
+      <Modified>2023-04-03T21:01:04.660</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.197</Modified>
+      <Modified>2023-04-03T21:01:04.661</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.209</Modified>
+      <Modified>2023-04-03T21:01:04.674</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.199</Modified>
+      <Modified>2023-04-03T21:01:04.662</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.201</Modified>
+      <Modified>2023-04-03T21:01:04.664</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.184</Modified>
+      <Modified>2023-04-03T21:01:04.641</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.186</Modified>
+      <Modified>2023-04-03T21:01:04.643</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.195</Modified>
+      <Modified>2023-04-03T21:01:04.658</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.186</Modified>
+      <Modified>2023-04-03T21:01:04.646</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.188</Modified>
+      <Modified>2023-04-03T21:01:04.648</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.157</Modified>
+      <Modified>2023-04-03T21:01:04.612</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.159</Modified>
+      <Modified>2023-04-03T21:01:04.614</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.161</Modified>
+      <Modified>2023-04-03T21:01:04.617</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.164</Modified>
+      <Modified>2023-04-03T21:01:04.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.171</Modified>
+      <Modified>2023-04-03T21:01:04.626</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.171</Modified>
+      <Modified>2023-04-03T21:01:04.627</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.172</Modified>
+      <Modified>2023-04-03T21:01:04.628</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.183</Modified>
+      <Modified>2023-04-03T21:01:04.640</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.173</Modified>
+      <Modified>2023-04-03T21:01:04.629</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.175</Modified>
+      <Modified>2023-04-03T21:01:04.633</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.254</Modified>
+      <Modified>2023-04-03T21:01:04.724</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.260</Modified>
+      <Modified>2023-04-03T21:01:04.732</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.266</Modified>
+      <Modified>2023-04-03T21:01:04.740</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.275</Modified>
+      <Modified>2023-04-03T21:01:04.752</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.299</Modified>
+      <Modified>2023-04-03T21:01:04.788</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.228</Modified>
+      <Modified>2023-04-03T21:01:04.695</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.231</Modified>
+      <Modified>2023-04-03T21:01:04.699</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.235</Modified>
+      <Modified>2023-04-03T21:01:04.704</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.240</Modified>
+      <Modified>2023-04-03T21:01:04.709</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.248</Modified>
+      <Modified>2023-04-03T21:01:04.719</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.211</Modified>
+      <Modified>2023-04-03T21:01:04.677</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.213</Modified>
+      <Modified>2023-04-03T21:01:04.679</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.215</Modified>
+      <Modified>2023-04-03T21:01:04.681</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.218</Modified>
+      <Modified>2023-04-03T21:01:04.685</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.225</Modified>
+      <Modified>2023-04-03T21:01:04.692</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.307</Modified>
+      <Modified>2023-04-03T21:01:04.797</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.314</Modified>
+      <Modified>2023-04-03T21:01:04.808</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.326</Modified>
+      <Modified>2023-04-03T21:01:04.818</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.344</Modified>
+      <Modified>2023-04-03T21:01:04.841</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.398</Modified>
+      <Modified>2023-04-03T21:01:04.891</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\background_moderno.scale-100.png">
       <PackagePath>background_moderno.scale-100.png</PackagePath>
@@ -1307,23 +1307,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.448</Modified>
+      <Modified>2023-04-03T21:01:04.941</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.483</Modified>
+      <Modified>2023-04-03T21:01:04.983</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.529</Modified>
+      <Modified>2023-04-03T21:01:05.042</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.617</Modified>
+      <Modified>2023-04-03T21:01:05.136</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.853</Modified>
+      <Modified>2023-04-03T21:01:05.427</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\imagem_cad.scale-100.png">
       <PackagePath>imagem_cad.scale-100.png</PackagePath>
@@ -1339,63 +1339,63 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menujogador.scale-100.png">
       <PackagePath>menujogador.scale-100.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.416</Modified>
+      <Modified>2023-04-03T21:01:04.906</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menujogador.scale-125.png">
       <PackagePath>menujogador.scale-125.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.420</Modified>
+      <Modified>2023-04-03T21:01:04.914</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menujogador.scale-150.png">
       <PackagePath>menujogador.scale-150.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.426</Modified>
+      <Modified>2023-04-03T21:01:04.918</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menujogador.scale-200.png">
       <PackagePath>menujogador.scale-200.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.433</Modified>
+      <Modified>2023-04-03T21:01:04.924</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menujogador.scale-400.png">
       <PackagePath>menujogador.scale-400.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.454</Modified>
+      <Modified>2023-04-03T21:01:04.950</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menupartida.scale-100.png">
       <PackagePath>menupartida.scale-100.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.416</Modified>
+      <Modified>2023-04-03T21:01:04.906</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menupartida.scale-125.png">
       <PackagePath>menupartida.scale-125.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.420</Modified>
+      <Modified>2023-04-03T21:01:04.914</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menupartida.scale-150.png">
       <PackagePath>menupartida.scale-150.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.426</Modified>
+      <Modified>2023-04-03T21:01:04.919</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menupartida.scale-200.png">
       <PackagePath>menupartida.scale-200.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.432</Modified>
+      <Modified>2023-04-03T21:01:04.927</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menupartida.scale-400.png">
       <PackagePath>menupartida.scale-400.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.459</Modified>
+      <Modified>2023-04-03T21:01:04.950</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menusorteio.scale-100.png">
       <PackagePath>menusorteio.scale-100.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.417</Modified>
+      <Modified>2023-04-03T21:01:04.906</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menusorteio.scale-125.png">
       <PackagePath>menusorteio.scale-125.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.422</Modified>
+      <Modified>2023-04-03T21:01:04.913</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menusorteio.scale-150.png">
       <PackagePath>menusorteio.scale-150.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.428</Modified>
+      <Modified>2023-04-03T21:01:04.918</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menusorteio.scale-200.png">
       <PackagePath>menusorteio.scale-200.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.436</Modified>
+      <Modified>2023-04-03T21:01:04.926</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\menusorteio.scale-400.png">
       <PackagePath>menusorteio.scale-400.png</PackagePath>
-      <Modified>2023-04-03T20:51:57.462</Modified>
+      <Modified>2023-04-03T21:01:04.949</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Partida_Justa.MenuJogador"
+             BackgroundImageSource="background_moderno.png"
+             Title="Menu de Jogador">
+    
+    <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Button
+                WidthRequest="200"
+                Text="Cadastrar Novo Jogador"
+                TextColor="Black"
+                BackgroundColor="GhostWhite"
+                BorderColor="Green"                    
+                HorizontalOptions="Center"
+                Clicked="MenuCadJogador"
+                />
+
+            <Button
+                WidthRequest="200"
+                Text="Editar Jogador"
+                TextColor="Black"
+                BackgroundColor="GhostWhite"
+                BorderColor="Green"                    
+                HorizontalOptions="Center"
+                Clicked="MenuEditarJogador"
+                />
+
+            <Button
+                WidthRequest="200"
+                Text="Excluir Jogador"
+                TextColor="Black"
+                BackgroundColor="GhostWhite"
+                BorderColor="Green"                   
+                HorizontalOptions="Center"
+                Clicked="MenuExcluirJogador"
+                />
+
+            <Button
+                WidthRequest="200"
+                Text="Ver Lista de Jogadores"
+                TextColor="Black"
+                BackgroundColor="GhostWhite"
+                BorderColor="Green"                   
+                HorizontalOptions="Center"
+                Clicked="MenuListarJogador"          
+                />
+
+    </VerticalStackLayout>
+        
+</ContentPage>

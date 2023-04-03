@@ -2,49 +2,49 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
-    <ActiveDebugFramework>net6.0-android</ActiveDebugFramework>
-    <ActiveDebugProfile>Samsung SM-A307GT (Android 11.0 – API 30)</ActiveDebugProfile>
-    <SelectedPlatformGroup>PhysicalDevice</SelectedPlatformGroup>
+    <ActiveDebugFramework>net6.0-windows10.0.19041.0</ActiveDebugFramework>
+    <ActiveDebugProfile>Windows Machine</ActiveDebugProfile>
+    <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
     <DefaultDevice>pixel_5_-_api_31</DefaultDevice>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-android|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="MenuJogador.xaml">
+    <MauiXaml Update="Views\MenuJogador.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="menuJogadorCad.xaml">
+    <MauiXaml Update="Views\menuJogadorCad.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="menuJogadorEditar.xaml">
+    <MauiXaml Update="Views\menuJogadorEditar.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="menuJogadorExcluir.xaml">
+    <MauiXaml Update="Views\menuJogadorExcluir.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="menuJogadorLista.xaml">
+    <MauiXaml Update="Views\menuJogadorLista.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="MenuPartida.xaml">
+    <MauiXaml Update="Views\MenuPartida.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="menuPartidaApagHist.xaml">
+    <MauiXaml Update="Views\menuPartidaApagHist.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="menuPartidaHist.xaml">
+    <MauiXaml Update="Views\menuPartidaHist.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="menuPartidaReg.xaml">
+    <MauiXaml Update="Views\menuPartidaReg.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="MenuSorteio.xaml">
+    <MauiXaml Update="Views\MenuSorteio.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="menuSorteioLista.xaml">
+    <MauiXaml Update="Views\menuSorteioLista.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="menuSorteioSort.xaml">
+    <MauiXaml Update="Views\menuSorteioSort.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Partida_Justa.menuJogadorEditar"
+             BackgroundImageSource="background_moderno.png"
+             xmlns:viewmodel="clr-namespace:Partida_Justa.Models"
+             Title="Editar Jogadores">
+
+    <Grid RowDefinitions="25,Auto,*"
+          ColumnDefinitions=".75*,.25*"
+          Padding="10"
+          RowSpacing="10"
+          ColumnSpacing="10"
+          >
+
+        <Label Text="Para editar, arraste para esquerda"
+               FontSize="Body"
+               TextColor="Green"
+               FontAttributes="Bold"
+               HeightRequest="25"/>
+
+        <CollectionView Grid.Row="2" Grid.ColumnSpan="2"
+                        ItemsSource="{Binding Jogadores}">
+            <CollectionView.ItemTemplate>
+                
+                <DataTemplate>                    
+                    <SwipeView>                         
+                        <SwipeView.RightItems>
+                            <SwipeItem Text="Editar"
+                                       BackgroundColor="LightCyan"                                       
+                                       CommandParameter="{Binding .}"/>                           
+                            <SwipeItem Text="Excluir"
+                                       BackgroundColor="Red"
+                                       Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:JogadorViewModel}},Path=DeleteCommand}"
+                                       CommandParameter="{Binding .}"/>
+
+                        </SwipeView.RightItems>
+
+                        <Grid Padding="0,5">                            
+
+                            <Frame BorderColor="Gray"
+                                   CornerRadius="5"
+                                   Padding="8">
+                                <StackLayout>                                   
+                                    <Label Text="{Binding Nome}"
+                                           FontSize="20"
+                                           FontAttributes="Bold" />
+                                    <BoxView Color="Gray"
+                                             HeightRequest="2"
+                                             HorizontalOptions="Fill" />
+                                    <Label Text="Nota:"
+                                           FontSize="15"
+                                           />
+                                    <Label Text="{Binding Nota}"/>
+                                </StackLayout>
+                            </Frame>
+
+                        </Grid>
+                    </SwipeView>                    
+                </DataTemplate>
+                
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+   
+</ContentPage>

@@ -52,31 +52,31 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="MenuJogador.xaml">
+	  <MauiXaml Update="Views\MenuJogador.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="menuJogadorCad.xaml">
+	  <MauiXaml Update="Views\menuJogadorCad.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="menuJogadorEditar.xaml">
+	  <MauiXaml Update="Views\menuJogadorEditar.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="menuJogadorExcluir.xaml">
+	  <MauiXaml Update="Views\menuJogadorExcluir.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="menuJogadorLista.xaml">
+	  <MauiXaml Update="Views\menuJogadorLista.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="MenuPartida.xaml">
+	  <MauiXaml Update="Views\MenuPartida.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="MenuSorteio.xaml">
+	  <MauiXaml Update="Views\MenuSorteio.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="menuSorteioLista.xaml">
+	  <MauiXaml Update="Views\menuSorteioLista.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="menuSorteioSort.xaml">
+	  <MauiXaml Update="Views\menuSorteioSort.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
@@ -87,7 +87,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="menuJogadorCad.xaml.cs">
+	  <Compile Update="Views\menuJogadorCad.xaml.cs">
 	    <DependentUpon>menuJogadorCad.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
