@@ -25566,18 +25566,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lssilva\\.nuget\\packages\\": {},
+    "C:\\Users\\Leanderson\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lssilva\\source\\repos\\Partida-Justa\\Partida Justa.csproj",
+      "projectUniqueName": "C:\\Users\\Leanderson\\source\\repos\\Partida-Justa\\Partida Justa.csproj",
       "projectName": "Partida Justa",
-      "projectPath": "C:\\Users\\lssilva\\source\\repos\\Partida-Justa\\Partida Justa.csproj",
-      "packagesPath": "C:\\Users\\lssilva\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lssilva\\source\\repos\\Partida-Justa\\obj\\",
+      "projectPath": "C:\\Users\\Leanderson\\source\\repos\\Partida-Justa\\Partida Justa.csproj",
+      "packagesPath": "C:\\Users\\Leanderson\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Leanderson\\source\\repos\\Partida-Justa\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
@@ -25585,7 +25585,7 @@
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\lssilva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Leanderson\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -25681,15 +25681,15 @@
           },
           {
             "name": "Microsoft.AspNetCore.App.Runtime.linux-arm",
-            "version": "[6.0.15, 6.0.15]"
+            "version": "[6.0.14, 6.0.14]"
           },
           {
             "name": "Microsoft.AspNetCore.App.Runtime.linux-arm64",
-            "version": "[6.0.15, 6.0.15]"
+            "version": "[6.0.14, 6.0.14]"
           },
           {
             "name": "Microsoft.AspNetCore.App.Runtime.linux-x64",
-            "version": "[6.0.15, 6.0.15]"
+            "version": "[6.0.14, 6.0.14]"
           },
           {
             "name": "Microsoft.Maui.Controls.Ref.android",
@@ -25733,7 +25733,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       },
       "net6.0-ios16.1": {
         "targetAlias": "net6.0-ios",
@@ -25824,7 +25824,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       },
       "net6.0-maccatalyst16.1": {
         "targetAlias": "net6.0-maccatalyst",
@@ -25916,7 +25916,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       },
       "net6.0-windows10.0.19041": {
         "targetAlias": "net6.0-windows10.0.19041.0",
@@ -25960,7 +25960,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-            "version": "[6.0.15, 6.0.15]"
+            "version": "[6.0.14, 6.0.14]"
           },
           {
             "name": "Microsoft.Maui.Controls.Ref.win",
@@ -25988,7 +25988,7 @@
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.win-x64",
-            "version": "[6.0.15, 6.0.15]"
+            "version": "[6.0.14, 6.0.14]"
           },
           {
             "name": "Microsoft.Windows.SDK.NET.Ref",
@@ -25996,7 +25996,7 @@
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-            "version": "[6.0.15, 6.0.15]"
+            "version": "[6.0.14, 6.0.14]"
           }
         ],
         "frameworkReferences": {
@@ -26016,7 +26016,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

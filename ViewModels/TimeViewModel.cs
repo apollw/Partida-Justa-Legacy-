@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -185,8 +186,8 @@ namespace Partida_Justa.Models
         }
 
         public void OnCarregarTimes()
-        {          
-            string filePath = Path.Combine(FileSystem.AppDataDirectory,"times.json");
+        {
+            string filePath = Path.Combine(FileSystem.AppDataDirectory, "times.json");
             if (File.Exists(filePath))
             {
                 // Se o arquivo existe, lê o conteúdo do arquivo e desserializa em uma lista de objetos ModelTime
@@ -198,6 +199,10 @@ namespace Partida_Justa.Models
 
                 Times = new ObservableCollection<ModelTime>(times);
             }
+
+            OnPropertyChanged(nameof(Times));
+
         }
+
     }
 }
