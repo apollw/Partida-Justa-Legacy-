@@ -48,8 +48,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Images\imagem_cad.png" />
-	  <None Remove="Resources\Images\imagem_sorteio.png" />
+	  <MauiImage Remove="Resources\Images\background_modelo.png" />
 	</ItemGroup>
 
 	<ItemGroup>

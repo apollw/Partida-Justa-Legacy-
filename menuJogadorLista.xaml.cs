@@ -8,7 +8,6 @@ public partial class menuJogadorLista : ContentPage
 	public menuJogadorLista()
 	{
         InitializeComponent();
-        // Define o BindingContext da página para uma nova instância da classe JogadorViewModel
         var viewModel = new JogadorViewModel();
         BindingContext = viewModel;
 

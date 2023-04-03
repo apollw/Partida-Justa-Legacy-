@@ -21,6 +21,8 @@ public partial class menuSorteioSort : ContentPage
 
         if (viewModel.Criado == true)
             await DisplayAlert("Alerta", "Times criados com sucesso!", "Concluir");
+        else
+            await DisplayAlert("Alerta", "Nenhum time foi gerado", "Fechar");
 
     }
 
@@ -31,11 +33,11 @@ public partial class menuSorteioSort : ContentPage
 
         if (selectedIndex != -1)
         {
-            int numeroJog = int.Parse((string)picker.ItemsSource[selectedIndex]);
+            int valor = int.Parse((string)picker.ItemsSource[selectedIndex]);
 
             // Atribue a nota do jogador aqui
             var viewModel = (TimeViewModel)BindingContext;
-            viewModel.ObjTime.NumeroJog = numeroJog;
+            viewModel.tamanhoEquipe = valor;
         }
     }
 
