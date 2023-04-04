@@ -15,7 +15,7 @@
                            Padding="22">
 
                         <StackLayout>
-                            <Label Text="{Binding NomeTime, StringFormat='Nome do Time: {0}'}"
+                            <Label Text="{Binding NomeTime, StringFormat='{0}'}"
                                    FontSize="20"
                                    FontAttributes="Bold" />
                             <BoxView Color="Gray"
@@ -29,7 +29,7 @@
                                 <BindableLayout.ItemTemplate>
                                     <DataTemplate>
                                         <StackLayout>
-                                            <Label Text="{Binding NomeJogador, StringFormat='Nome: {0}'}" />
+                                            <Label Text="{Binding NomeJogador, StringFormat='{0}'}" />
                                         </StackLayout>
                                     </DataTemplate>
                                 </BindableLayout.ItemTemplate>

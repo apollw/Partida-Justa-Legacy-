@@ -29,6 +29,7 @@ namespace Partida_Justa.Models
         public JogadorViewModel()
         {
             EnviarCommand = new Command(OnEnviar);
+            DeleteCommand = new Command(OnExcluir);
             Jogadores = new ObservableCollection<ModelJogador>();
             
         }
@@ -39,6 +40,7 @@ namespace Partida_Justa.Models
 
         /*Implementando Comando*/
         public ICommand EnviarCommand { get; }
+        public ICommand DeleteCommand { get; }
 
         public string NomeJogador
         {

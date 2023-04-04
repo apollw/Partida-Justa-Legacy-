@@ -15,7 +15,7 @@ public partial class menuSorteioLista : ContentPage
         BindingContext = viewModel;
 
         // Inicializa a página e carrega os componentes visuais
-        InitializeComponent();
+        InitializeComponent();        
 
         /*Em geral, no processo de inicialização de uma página, primeiro precisamos carregar os dados que serão exibidos nela. 
          * Neste caso, os dados que desejamos exibir são os times sorteados, que são carregados por meio da chamada ao método 

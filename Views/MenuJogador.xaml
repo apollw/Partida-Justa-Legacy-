@@ -12,7 +12,7 @@
 
             <Button
                 WidthRequest="200"
-                Text="Cadastrar Novo Jogador"
+                Text="Cadastrar"
                 TextColor="Black"
                 BackgroundColor="GhostWhite"
                 BorderColor="Green"                    
@@ -22,7 +22,7 @@
 
             <Button
                 WidthRequest="200"
-                Text="Editar Jogador"
+                Text="Editar"
                 TextColor="Black"
                 BackgroundColor="GhostWhite"
                 BorderColor="Green"                    
@@ -32,23 +32,23 @@
 
             <Button
                 WidthRequest="200"
-                Text="Excluir Jogador"
-                TextColor="Black"
-                BackgroundColor="GhostWhite"
-                BorderColor="Green"                   
-                HorizontalOptions="Center"
-                Clicked="MenuExcluirJogador"
-                />
-
-            <Button
-                WidthRequest="200"
-                Text="Ver Lista de Jogadores"
+                Text="Ver Lista"
                 TextColor="Black"
                 BackgroundColor="GhostWhite"
                 BorderColor="Green"                   
                 HorizontalOptions="Center"
                 Clicked="MenuListarJogador"          
                 />
+
+            <Button
+                WidthRequest="200"
+                Text="Limpar Lista"
+                TextColor="Black"
+                BackgroundColor="GhostWhite"
+                BorderColor="Green"                   
+                HorizontalOptions="Center"
+                Clicked="MenuLimparLista"
+                />          
 
     </VerticalStackLayout>
         

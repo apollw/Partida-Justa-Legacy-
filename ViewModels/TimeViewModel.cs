@@ -103,19 +103,15 @@ namespace Partida_Justa.Models
             //Após deserializar a lista de jogadores, usar essa lista para a lógica de sorteio
             ObservableCollection <ModelJogador> listaTemporaria = new ObservableCollection<ModelJogador>(Jogadores);
             //Inicializa também a lista geral de times (Times)
-            ObservableCollection <ModelTime> Times = new ObservableCollection<ModelTime>();           
-                     
+            ObservableCollection <ModelTime> Times = new ObservableCollection<ModelTime>();
+
+            //Embaralhar listaTemporaria
+            Random rng = new Random();
+            listaTemporaria = new ObservableCollection<ModelJogador>(listaTemporaria.OrderBy(x => rng.Next()));
+
             //Resgata o valor do picker e calcula a quantidade de times a ser gerada
             quantidadeTimes = Jogadores.Count / tamanhoEquipe;        
 
-            //Embaralhar a ordem dos elementos da lista temporária para
-            //gerar resultados distintos na hora de gerar times com mesmo tamanho
-
-            /*O que ocorre é que, ao tentar sortear times diferentes de tamanhos iguais,
-             a lista temp sempre copiava a lista original na mesma ordem, então, o último 
-            jogador da lista para times diferentes sempre ficava de fora*/
-
-            //Apenas gera times se houver jogadores suficientes para gerá-los
             if(quantidadeTimes> 0)
             {
                 int k = 1;
@@ -124,7 +120,6 @@ namespace Partida_Justa.Models
                 do
                 {
                     ModelTime timeGen = new ModelTime();
-                    //timeGen = timeGen.AdicionarNovoTime();
 
                     //Inicializa a propriedade JogadorTime pela quantidade de jogadores fornecida
                     timeGen.JogadorTime = new ObservableCollection<JogadorViewModel>();
@@ -134,31 +129,26 @@ namespace Partida_Justa.Models
                         jogador.NomeJogador = string.Empty;
                         jogador.NotaJogador = 0;
                         timeGen.JogadorTime.Add(jogador);
-                    }
-
-                    //Após a ObservableCollection dentro da classe ModelTime ter sido inicializada
-                    //agora inserimos os jogadores a cada time                
+                    }            
 
                     //Laço interno para adicionar jogadores a cada time
-                    //Aqui contém a lógica de sorteio dos times             
-
                     do
                     {
                         Random rnd = new Random();
                         int indice = rnd.Next(listaTemporaria.Count - 1);
                         ModelJogador element = listaTemporaria[indice];
 
-                        listaTemporaria.RemoveAt(indice); //Retira o elemento (Jogador) no índice 
+                        listaTemporaria.RemoveAt(indice);
 
-                        //Aqui parece que a JogadorTime não tem nenhum elemento para ser copiado em cima
-                        //Então é necessário inicializá-la fora do loop
                         timeGen.JogadorTime[k - 1].NomeJogador = element.Nome;
                         timeGen.JogadorTime[k - 1].NotaJogador = element.Nota;
 
                         k++; //Adicionou um jogador
                     }
                     while (k <= tamanhoEquipe);
-                    k = 1;//Reinicia o ciclo de adicionar jogadores    
+                    k = 1;//Reinicia o ciclo de adicionar jogadores
+
+                    timeGen.NomeTime = "Time " + j;
 
                     //Após esse processo, adicionamos o time na lista geral de times
                     //A lista geral de times aqui é uma ObservableCollection
@@ -168,14 +158,41 @@ namespace Partida_Justa.Models
                 } while (j <= quantidadeTimes);
                 Criado = true; //Times criados
 
-                //Criar lista de espera com os jogadores que sobraram                
+                //Criar lista de espera com os jogadores que sobraram                                            
+                if (listaTemporaria.Count!=0)
+                {
+                    ModelTime timeEspera = new ModelTime();
+                    timeEspera.JogadorTime = new ObservableCollection<JogadorViewModel>();
+                    for (int i = 0; i < listaTemporaria.Count; i++)
+                    {
+                        JogadorViewModel jogador = new JogadorViewModel();
+                        jogador.NomeJogador = string.Empty;
+                        jogador.NotaJogador = 0;
+                        timeEspera.JogadorTime.Add(jogador);
+                    }
+
+                    do
+                    {
+                        Random rnd = new Random();
+                        int indice = rnd.Next(listaTemporaria.Count - 1);                       
+                        ModelJogador element = listaTemporaria[indice];
+
+                        listaTemporaria.RemoveAt(indice);
+                        
+                        timeEspera.JogadorTime[k - 1].NomeJogador = element.Nome;
+                        timeEspera.JogadorTime[k - 1].NotaJogador = element.Nota;                     
+
+                        k++; //Adicionou um jogador
+
+                    }
+                    while (listaTemporaria.Count!=0);                    
+
+                    timeEspera.NomeTime = "Lista de Espera";
+                    Times.Add(timeEspera);
+                }               
 
                 // Serializa a coleção Times em uma string JSON
-                string json2 = JsonConvert.SerializeObject(Times);
-
-                ////salva a string JSON em um arquivo no Desktop
-                //var filePath2 = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "times.json");
-                //File.WriteAllText(filePath2, json2);
+                string json2 = JsonConvert.SerializeObject(Times);                
 
                 // Salva a string JSON em um arquivo
                 string filePath2 = Path.Combine(FileSystem.AppDataDirectory, "times.json");
@@ -198,10 +215,7 @@ namespace Partida_Justa.Models
                     times = JsonConvert.DeserializeObject<List<ModelTime>>(json);
 
                 Times = new ObservableCollection<ModelTime>(times);
-            }
-
-            OnPropertyChanged(nameof(Times));
-
+            }           
         }
 
     }

@@ -61,9 +61,6 @@
 	  <MauiXaml Update="Views\menuJogadorEditar.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\menuJogadorExcluir.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="Views\menuJogadorLista.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

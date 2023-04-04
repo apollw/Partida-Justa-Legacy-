@@ -20,7 +20,10 @@ public partial class menuSorteioSort : ContentPage
             viewModel.SortearCommand.Execute(null);
 
         if (viewModel.Criado == true)
+        {
             await DisplayAlert("Alerta", "Times criados com sucesso!", "Concluir");
+            await Navigation.PushAsync(new menuSorteioLista());
+        }
         else
             await DisplayAlert("Alerta", "Nenhum time foi gerado", "Fechar");
 
