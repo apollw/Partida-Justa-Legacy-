@@ -110,9 +110,10 @@ namespace Partida_Justa.Models
             listaTemporaria = new ObservableCollection<ModelJogador>(listaTemporaria.OrderBy(x => rng.Next()));
 
             //Resgata o valor do picker e calcula a quantidade de times a ser gerada
-            quantidadeTimes = Jogadores.Count / tamanhoEquipe;        
+            if(tamanhoEquipe != 0)
+                quantidadeTimes = Jogadores.Count / tamanhoEquipe;        
 
-            if(quantidadeTimes> 0)
+            if(quantidadeTimes>=1)
             {
                 int k = 1;
                 int j = 1;

@@ -30,6 +30,7 @@ namespace Partida_Justa.Models
         {
             EnviarCommand = new Command(OnEnviar);
             DeleteCommand = new Command(OnExcluir);
+            DeleteJogadorCommand = new Command<ModelJogador>(OnExcluirJogador);
             Jogadores = new ObservableCollection<ModelJogador>();
             
         }
@@ -41,6 +42,7 @@ namespace Partida_Justa.Models
         /*Implementando Comando*/
         public ICommand EnviarCommand { get; }
         public ICommand DeleteCommand { get; }
+        public ICommand DeleteJogadorCommand { get; }
 
         public string NomeJogador
         {
@@ -81,7 +83,7 @@ namespace Partida_Justa.Models
         }
               
         public void OnExcluirJogador(ModelJogador jogador)
-        {
+        {            
             Jogadores.Remove(jogador);
 
             var filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
@@ -92,8 +94,7 @@ namespace Partida_Justa.Models
         void OnEnviar()
         {           
             // Verifica se o arquivo jogadores.json existe
-            var filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
-            
+            var filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");            
             if (File.Exists(filePath))
             {
                 // Se o arquivo existe, lê o conteúdo do arquivo e desserializa em uma lista de objetos JogadorModel
@@ -131,7 +132,6 @@ namespace Partida_Justa.Models
             string filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
             if (File.Exists(filePath))
             {
-                // Se o arquivo existe, lê o conteúdo do arquivo e desserializa em uma lista de objetos JogadorModel
                 string json = File.ReadAllText(filePath);
                 List<ModelJogador> jogadores = new List<ModelJogador>();
 
@@ -142,7 +142,6 @@ namespace Partida_Justa.Models
             }
         }
 
-        //O método abaixo apaga não os elementos do arquivo JSON em si, mas sim todo o arquivo
         public void OnExcluir()
         {
             var filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");

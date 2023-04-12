@@ -40,7 +40,9 @@ public partial class menuSorteioSort : ContentPage
 
             // Atribue a nota do jogador aqui
             var viewModel = (TimeViewModel)BindingContext;
-            viewModel.tamanhoEquipe = valor;
+
+            if(valor!=0)
+                viewModel.tamanhoEquipe = valor;
         }
     }
 
