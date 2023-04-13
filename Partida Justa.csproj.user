@@ -17,6 +17,9 @@
     <MauiXaml Update="Views\menuJogadorCad.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\menuJogadorEdicao.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\menuJogadorEditar.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

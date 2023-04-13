@@ -52,6 +52,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.Views.menuJo
 build_metadata.AdditionalFiles.TargetPath = Views\menuJogadorCad.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\menuJogadorCad.xaml
 
+[C:/Users/lssilva/source/repos/Partida-Justa/Views/menuJogadorEdicao.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.Views.menuJogadorEdicao.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\menuJogadorEdicao.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\menuJogadorEdicao.xaml
+
 [C:/Users/lssilva/source/repos/Partida-Justa/Views/menuJogadorEditar.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.Views.menuJogadorEditar.xaml

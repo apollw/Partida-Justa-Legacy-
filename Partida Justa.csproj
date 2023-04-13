@@ -58,6 +58,9 @@
 	  <MauiXaml Update="Views\menuJogadorCad.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\menuJogadorEdicao.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\menuJogadorEditar.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -86,6 +89,9 @@
 	<ItemGroup>
 	  <Compile Update="Views\menuJogadorCad.xaml.cs">
 	    <DependentUpon>menuJogadorCad.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\menuJogadorEditar.xaml.cs">
+	    <DependentUpon>menuJogadorEditar.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 

@@ -91,7 +91,7 @@ namespace Partida_Justa.Models
         }
 
 
-        void OnEnviar()
+        public void OnEnviar()
         {           
             // Verifica se o arquivo jogadores.json existe
             var filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");            

@@ -3,8 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Partida_Justa.menuJogadorEditar"
              BackgroundImageSource="background_moderno.png"
-             xmlns:viewmodel="clr-namespace:Partida_Justa.Models"
-             x:DataType="viewmodel:JogadorViewModel"
+             xmlns:viewmodel="clr-namespace:Partida_Justa.Models"    
              Title="Editar Jogadores">
 
     <Grid RowDefinitions="25,Auto,*"
@@ -14,7 +13,7 @@
           ColumnSpacing="10"
           >
 
-        <Label Text="Para editar, arraste para esquerda"
+        <Label Text="Para editar, arraste para a direita"
                FontSize="Body"
                TextColor="Green"
                FontAttributes="Bold"
@@ -24,18 +23,15 @@
                         ItemsSource="{Binding Jogadores}">
             <CollectionView.ItemTemplate>
                 
-                <DataTemplate x:DataType="{x:Type x:String}">                    
+                <DataTemplate>                    
                     <SwipeView>                         
                         <SwipeView.RightItems>
-                            <SwipeItem Text="Editar"
-                                       BackgroundColor="LightCyan"                                       
-                                       CommandParameter="{Binding .}"/>                           
-                            <SwipeItem Text="Excluir"
-                                       BackgroundColor="Red"
-                                       Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:JogadorViewModel}},Path=DeleteCommand}"
-                                       CommandParameter="{Binding .}"/>
-
-                        </SwipeView.RightItems>
+                            <!--<SwipeItems Mode="Execute"> Caso não seja necessária confirmação-->
+                            <SwipeItems>
+                                <SwipeItem Text="Excluir Jogador" BackgroundColor="Red" Invoked="OnDeleteSwipeItemInvoked" />
+                                <SwipeItem Text="Editar" BackgroundColor="LightBlue" Invoked="OnEditSwipeItemInvoked" />
+                            </SwipeItems>                            
+                        </SwipeView.RightItems>                      
 
                         <Grid Padding="0,5">                            
 
