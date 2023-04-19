@@ -106,6 +106,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.Views.menuSo
 build_metadata.AdditionalFiles.TargetPath = Views\menuSorteioLista.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\menuSorteioLista.xaml
 
+[C:/Users/lssilva/source/repos/Partida-Justa/Views/menuSorteioPresenca.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.Views.menuSorteioPresenca.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\menuSorteioPresenca.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\menuSorteioPresenca.xaml
+
 [C:/Users/lssilva/source/repos/Partida-Justa/Views/menuSorteioSort.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Partida_Justa.Views.menuSorteioSort.xaml

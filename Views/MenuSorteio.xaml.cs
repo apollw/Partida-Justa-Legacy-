@@ -1,3 +1,5 @@
+using Partida_Justa.Views;
+
 namespace Partida_Justa;
 
 public partial class MenuSorteio : ContentPage
@@ -7,9 +9,15 @@ public partial class MenuSorteio : ContentPage
 		InitializeComponent();
 	}
 
+    //private async void MenuSortSorteio(object sender, EventArgs e)
+    //{
+    //    await Navigation.PushAsync(new menuSorteioSort());
+
+    //}
+
     private async void MenuSortSorteio(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new menuSorteioSort());
+        await Navigation.PushAsync(new menuSorteioPresenca());
 
     }
 

@@ -11,8 +11,10 @@ namespace Partida_Justa
     {
         private string nome = string.Empty;
         private int nota = 0;
+        private bool presente = false;
 
         public string Nome { get => nome; set => nome = value; }
         public int Nota { get => nota; set => nota = value; }
+        public bool Presente { get => presente; set => presente = value; }
     }
 }

@@ -1,3 +1,4 @@
+//using AndroidX.Lifecycle;
 using Microsoft.Maui;
 using Microsoft.Maui.Controls.Platform;
 using Microsoft.Maui.Graphics;
@@ -7,6 +8,7 @@ using Partida_Justa.Views;
 using System.Collections.ObjectModel;
 //using System.Drawing;
 using System.Xml.Linq;
+//using static Android.Content.ClipData;
 //using static System.Net.Mime.MediaTypeNames;
 
 namespace Partida_Justa;
@@ -14,6 +16,8 @@ namespace Partida_Justa;
 public partial class menuJogadorEditar : ContentPage
 {
     public ObservableCollection<ModelJogador> MyItems { get; set; }
+    string nomeTemp;
+    bool repetido; //Aponta que já existe outro jogador com o nome editado
 
     public menuJogadorEditar()
     {
@@ -46,14 +50,16 @@ public partial class menuJogadorEditar : ContentPage
     async void OnEditSwipeItemInvoked(object sender, EventArgs e)
     {
         var swipeItem = sender as SwipeItem;
-        var jogador = swipeItem.BindingContext as ModelJogador;  
+        var jogador = swipeItem.BindingContext as ModelJogador;
+
+        nomeTemp = jogador.Nome; //Guarda o nome que o método traz da lista
 
         var nameEntry = new Entry
         {
             Text = jogador.Nome,
             Placeholder = "Insira o nome do jogador",
             WidthRequest = 250,
-            TextColor = Color.FromRgb(0,0,0),
+            TextColor = Color.FromRgb(0, 0, 0),
             PlaceholderColor = Color.FromRgb(217, 217, 217),
             BackgroundColor = Color.FromRgb(255, 255, 255),
             Keyboard = Keyboard.Default
@@ -65,8 +71,8 @@ public partial class menuJogadorEditar : ContentPage
             ItemsSource = new List<int> { 1, 2, 3, 4, 5 },
             SelectedItem = jogador.Nota,
             WidthRequest = 250,
-            TextColor =Color.FromRgb(0,0,0), 
-            BackgroundColor = Color.FromRgb(255,255,255),
+            TextColor = Color.FromRgb(0, 0, 0),
+            BackgroundColor = Color.FromRgb(255, 255, 255),
             HorizontalOptions = LayoutOptions.Center
         };
 
@@ -82,12 +88,26 @@ public partial class menuJogadorEditar : ContentPage
 
         saveButton.Clicked += async (s, args) =>
         {
+            //Primeiro verifica se o novo nome incluso não é de outro jogador incluso na lista
+            repetido = false;
+            foreach (ModelJogador element in MyItems)
+            {
+                if (element.Nome != nomeTemp && nameEntry.Text == element.Nome)
+                {
+                    //Se o jogador na lista for igual ao nome da Entry, porém diferente do 
+                    //nome trazido à Entry inicialmente, então estamos tentando adicionar 
+                    //outro jogador já existente
+                    repetido = true;
+                    break;
+                }
+            }
+
             // Efetuar as alterações aqui
-            if (nameEntry.Text != String.Empty)
+            if (nameEntry.Text != String.Empty && repetido==false)
             {
                 jogador.Nome = nameEntry.Text;
-                jogador.Nota = (int)notaPicker.SelectedItem;
-
+                jogador.Nota = (int)notaPicker.SelectedItem;             
+                
                 //Salva as alterações
                 var filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
                 //Serializa a lista atualizada de volta para uma string JSON
@@ -96,14 +116,17 @@ public partial class menuJogadorEditar : ContentPage
                 File.WriteAllText(filePath, json);
 
                 await DisplayAlert("Alerta", "Jogador Editado com Sucesso!", "Concluir");
-                await Navigation.PopModalAsync();
+                await Navigation.PopAsync();
+                                
             }
             else
-                await DisplayAlert("Alerta", "Nome do Jogador não Informado", "Fechar");
-            
+            {
+                await DisplayAlert("Alerta", "Jogador não foi Editado", "Fechar");
+            }
+
         };
 
-        var cancelButton = new Button 
+        var cancelButton = new Button
         {
             Text = "Cancelar",
             WidthRequest = 200,
@@ -114,13 +137,14 @@ public partial class menuJogadorEditar : ContentPage
         };
         cancelButton.Clicked += async (s, args) =>
         {
-            await Navigation.PopModalAsync();
-        };       
+         
+            await Navigation.PopAsync();
+        };
 
         var stackLayout = new StackLayout
         {
-            Spacing = 25,
-            Padding = new Thickness(25, 0),
+            Spacing = 5,
+            Padding = new Thickness(35, 0),
             VerticalOptions = LayoutOptions.Center
         };
         stackLayout.Children.Add(new Image { WidthRequest = 200, Source = "imagem_cad.png" });
@@ -138,29 +162,10 @@ public partial class menuJogadorEditar : ContentPage
         {
             Content = scrollView,
             BackgroundImageSource = "background_moderno.png",
-            Title = "Cadastro de Jogadores"
-        };
+            Title = "Edição de Jogadores"
+        };  
 
-        //var contentPage = new ContentPage
-        //{
-        //    Content = stackLayout,
-        //    BackgroundImageSource = "background_moderno.png",
-        //    Title = "Cadastro de Jogadores"
-        //};
-
-        await Navigation.PushModalAsync(contentPage);
+        await Navigation.PushAsync(contentPage);
     }
-
-    //async void OnEditSwipeItemInvoked(object sender, EventArgs e)
-    //{
-    //    var swipeItem = sender as SwipeItem;
-    //    var jogador = swipeItem.BindingContext as ModelJogador;
-
-    //    // Instancie a página de conteúdo a partir do arquivo XAML
-    //    var editPage = new menuJogadorEdicao(jogador);
-
-    //    // Navegue para a página de conteúdo
-    //    await Navigation.PushModalAsync(editPage);
-    //}
 
 }

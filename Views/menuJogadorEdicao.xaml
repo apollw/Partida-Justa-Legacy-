@@ -10,7 +10,7 @@
             Padding="30,0"
             VerticalOptions="Center">
 
-        <!--<Image
+        <Image
             WidthRequest="200"            
             Source="imagem_cad.png"/>
 
@@ -21,9 +21,9 @@
             BackgroundColor="White" 
             Placeholder="Insira o nome do jogador"             
             Keyboard="Default"
-            />-->
+            />
 
-        <!--<Picker 
+        <Picker 
             x:Name="picker"
             WidthRequest="250"
             BackgroundColor="LightGray"   
@@ -42,25 +42,25 @@
                     <x:String>5</x:String>
                 </x:Array>
             </Picker.ItemsSource>
-        </Picker>-->
+        </Picker>
 
-        <!--<Button
+        <Button
                 WidthRequest="200"
                 Text="Salvar"
                 TextColor="Black"
                 BackgroundColor="GhostWhite"
                 BorderColor="Green"
                 HorizontalOptions="Center"              
-                Clicked="OnSaveButtonClicked"/>-->
+                Clicked="OnSaveButtonClicked"/>
 
-        <!--<Button
+        <Button
                 WidthRequest="200"
                 Text="Cancelar"
                 TextColor="Black"
                 BackgroundColor="IndianRed"
                 BorderColor="Green"
                 HorizontalOptions="Center"
-                Clicked="OnCancelButtonClicked" />-->
+                Clicked="OnCancelButtonClicked" />
 
 
     </VerticalStackLayout>
