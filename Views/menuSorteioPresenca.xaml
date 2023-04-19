@@ -7,7 +7,7 @@
              Title="Confirmar Presenças">
 
 
-    <Grid RowDefinitions="25,Auto,*"
+    <!--<Grid RowDefinitions="25,Auto,*"
           ColumnDefinitions=".75*,.25*"
           Padding="10"
           RowSpacing="10"
@@ -58,8 +58,18 @@
             </CollectionView.ItemTemplate>
         </CollectionView>      
                
-    </Grid>
-    
+    </Grid>-->
+
+
+    <VerticalStackLayout>  
+
+        <TableView x:Name="JogadoresTableView">
+            <TableRoot>
+                <TableSection Title="Jogadores">
+                </TableSection>
+            </TableRoot>
+        </TableView>                      
+    </VerticalStackLayout>        
     
 
 </ContentPage>
