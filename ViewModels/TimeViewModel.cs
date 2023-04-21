@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.Maui.Controls;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -18,6 +19,7 @@ namespace Partida_Justa.Models
         private bool criado; //Confirmação de times criados
 
         private ObservableCollection<ModelJogador> _jogadores;
+        private ObservableCollection<ModelJogador> _jogadoresPresentes;
         private ObservableCollection<ModelTime> _times;
 
         //OnPropertyChanged
@@ -74,6 +76,16 @@ namespace Partida_Justa.Models
             }
         }
 
+        public ObservableCollection<ModelJogador> JogadoresPresentes
+        {
+            get => _jogadoresPresentes;
+            set
+            {
+                _jogadoresPresentes = value;
+                OnPropertyChanged(nameof(_jogadoresPresentes));
+            }
+        }
+
         public void OnPropertyChanged(string propertyName)
         {            
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
@@ -93,17 +105,24 @@ namespace Partida_Justa.Models
                 // Se o arquivo existe, lê o conteúdo do arquivo e desserializa em uma lista de objetos JogadorModel
                 string json = File.ReadAllText(filePath);
                 List<ModelJogador> jogadores = new List<ModelJogador>();
+                List<ModelJogador> jogadoresPresentes = new List<ModelJogador>();
 
                 if (json != string.Empty)
+                {
                     jogadores = JsonConvert.DeserializeObject<List<ModelJogador>>(json);
+                    //jogadores = jogadores.Where(j => j.Presente).ToList();
+                    jogadoresPresentes = jogadores.Where(j => j.Presente).ToList();
+                }
 
                 Jogadores = new ObservableCollection<ModelJogador>(jogadores);
+                JogadoresPresentes = new ObservableCollection<ModelJogador>(jogadoresPresentes);
             }
-
+           
             //Após deserializar a lista de jogadores, usar essa lista para a lógica de sorteio
-            ObservableCollection <ModelJogador> listaTemporaria = new ObservableCollection<ModelJogador>(Jogadores);
+            //ObservableCollection<ModelJogador> listaTemporaria = new ObservableCollection<ModelJogador>(Jogadores);
+            ObservableCollection<ModelJogador> listaTemporaria = new ObservableCollection<ModelJogador>(JogadoresPresentes);
             //Inicializa também a lista geral de times (Times)
-            ObservableCollection <ModelTime> Times = new ObservableCollection<ModelTime>();
+            ObservableCollection<ModelTime> Times = new ObservableCollection<ModelTime>();
 
             //Embaralhar listaTemporaria
             Random rng = new Random();
@@ -111,9 +130,11 @@ namespace Partida_Justa.Models
 
             //Resgata o valor do picker e calcula a quantidade de times a ser gerada
             if(tamanhoEquipe != 0)
-                quantidadeTimes = Jogadores.Count / tamanhoEquipe;        
+                //quantidadeTimes = Jogadores.Count / tamanhoEquipe;
+                quantidadeTimes = JogadoresPresentes.Count / tamanhoEquipe; //Sorteio agora é feito com base nos presentes
 
-            if(quantidadeTimes>=1)
+
+                if (quantidadeTimes >= 1)
             {
                 int k = 1;
                 int j = 1;
@@ -130,7 +151,7 @@ namespace Partida_Justa.Models
                         jogador.NomeJogador = string.Empty;
                         jogador.NotaJogador = 0;
                         timeGen.JogadorTime.Add(jogador);
-                    }            
+                    }
 
                     //Laço interno para adicionar jogadores a cada time
                     do
@@ -160,7 +181,7 @@ namespace Partida_Justa.Models
                 Criado = true; //Times criados
 
                 //Criar lista de espera com os jogadores que sobraram                                            
-                if (listaTemporaria.Count!=0)
+                if (listaTemporaria.Count != 0)
                 {
                     ModelTime timeEspera = new ModelTime();
                     timeEspera.JogadorTime = new ObservableCollection<JogadorViewModel>();
@@ -175,32 +196,44 @@ namespace Partida_Justa.Models
                     do
                     {
                         Random rnd = new Random();
-                        int indice = rnd.Next(listaTemporaria.Count - 1);                       
+                        int indice = rnd.Next(listaTemporaria.Count - 1);
                         ModelJogador element = listaTemporaria[indice];
 
                         listaTemporaria.RemoveAt(indice);
-                        
+
                         timeEspera.JogadorTime[k - 1].NomeJogador = element.Nome;
-                        timeEspera.JogadorTime[k - 1].NotaJogador = element.Nota;                     
+                        timeEspera.JogadorTime[k - 1].NotaJogador = element.Nota;
 
                         k++; //Adicionou um jogador
 
                     }
-                    while (listaTemporaria.Count!=0);                    
+                    while (listaTemporaria.Count != 0);
 
                     timeEspera.NomeTime = "Lista de Espera";
                     Times.Add(timeEspera);
-                }               
+                }
 
                 // Serializa a coleção Times em uma string JSON
-                string json2 = JsonConvert.SerializeObject(Times);                
+                string json2 = JsonConvert.SerializeObject(Times);
 
                 // Salva a string JSON em um arquivo
                 string filePath2 = Path.Combine(FileSystem.AppDataDirectory, "times.json");
                 File.WriteAllText(filePath2, json2);
             }
             else
-                Criado=false;
+                Criado = false;
+
+            //Após salvar os times, atualiza o status de presença de todos os jogadores
+            foreach (var jogador in Jogadores)
+            {
+                // Marcar ou desmarcar o jogador como presente
+                jogador.Presente = false;
+
+                // Salvar as informações atualizadas no arquivo JSON
+                var filePathJogador = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
+                string json = JsonConvert.SerializeObject(Jogadores);
+                File.WriteAllText(filePathJogador, json);
+            }
         }
 
         public void OnCarregarTimes()

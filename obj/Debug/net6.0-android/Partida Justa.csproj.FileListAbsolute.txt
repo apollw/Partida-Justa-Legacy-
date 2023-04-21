@@ -169,14 +169,12 @@ C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\Mono.Android.Export.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\Mono.Android.Export.pdb
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\Mono.Android.pdb
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\mscorlib.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\netstandard.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\Newtonsoft.Json.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\Partida Justa.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\Partida Justa.pdb
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.AppContext.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Buffers.dll
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Collections.Concurrent.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Collections.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Collections.Immutable.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Collections.NonGeneric.dll
@@ -192,7 +190,6 @@ C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Core.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Data.Common.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Data.DataSetExtensions.dll
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Data.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Contracts.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Debug.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Diagnostics.DiagnosticSource.dll
@@ -203,7 +200,6 @@ C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Tools.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Diagnostics.TraceSource.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Tracing.dll
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Drawing.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Drawing.Primitives.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Dynamic.Runtime.dll
@@ -253,9 +249,7 @@ C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Numerics.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Numerics.Vectors.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.ObjectModel.dll
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Private.DataContractSerialization.dll
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Private.Xml.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Private.Xml.Linq.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Reflection.DispatchProxy.dll
@@ -322,7 +316,6 @@ C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Web.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Web.HttpUtility.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Windows.dll
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Xml.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Xml.Linq.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Xml.ReaderWriter.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Xml.Serialization.dll
@@ -481,7 +474,6 @@ C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\Xamarin.Kotlin.StdLib.Jdk8.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\Xamarin.KotlinX.Coroutines.Android.dll
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\Xamarin.KotlinX.Coroutines.Core.Jvm.dll
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\typemaps.arm64-v8a.s
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\typemaps.shared.inc
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\AndroidManifest.xml
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\AndroidManifest.xml
@@ -491,7 +483,6 @@ C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\bin\mono.android.jar
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\static.flag
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\buildid.txt
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\environment.arm64-v8a.s
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\src\androidx\activity\ktx\R.java
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\src\androidx\activity\R.java
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\src\androidx\annotation\experimental\R.java
@@ -962,11 +953,6 @@ C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\src\mono\MonoPackageManager_Resources.java
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\bin\packaged_resources
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\src\com\companyname\partida_justa\R.java
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\compressed_assemblies.arm64-v8a.s
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\typemaps.arm64-v8a.o
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\environment.arm64-v8a.o
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\compressed_assemblies.arm64-v8a.o
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\app_shared_libraries\arm64-v8a\libxamarin-app.so
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\bin\classes.dex
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\bin\classes2.dex
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\stamp\_CleanIntermediateIfNeeded.stamp
@@ -1954,3 +1940,17 @@ C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-android\stamp\_Conv
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\mscorlib.dll
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Collections.Concurrent.dll
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Data.dll
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.dll
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Xml.dll
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\typemaps.arm64-v8a.s
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\environment.arm64-v8a.s
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\compressed_assemblies.arm64-v8a.s
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\typemaps.arm64-v8a.o
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\environment.arm64-v8a.o
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\compressed_assemblies.arm64-v8a.o
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\app_shared_libraries\arm64-v8a\libxamarin-app.so

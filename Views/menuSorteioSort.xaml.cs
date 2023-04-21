@@ -1,4 +1,5 @@
 using Partida_Justa.Models;
+using Partida_Justa.Views;
 
 namespace Partida_Justa;
 
@@ -25,7 +26,10 @@ public partial class menuSorteioSort : ContentPage
             await Navigation.PushAsync(new menuSorteioLista());
         }
         else
-            await DisplayAlert("Alerta", "Nenhum time foi gerado", "Fechar");
+        {
+            await DisplayAlert("Alerta", "Número Insuficiente de Jogadores", "Fechar");
+            await Navigation.PopAsync();
+        }
 
     }
 

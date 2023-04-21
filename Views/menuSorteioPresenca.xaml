@@ -6,70 +6,34 @@
              xmlns:viewmodel="clr-namespace:Partida_Justa.Models"  
              Title="Confirmar Presenças">
 
-
-    <!--<Grid RowDefinitions="25,Auto,*"
-          ColumnDefinitions=".75*,.25*"
-          Padding="10"
-          RowSpacing="10"
-          ColumnSpacing="10"
-          >       
-
-        <Label Text="Arraste os jogadores para presença"
-               FontSize="Body"
-               TextColor="Green"
-               FontAttributes="Bold"
-               HeightRequest="25"/>
-
-        <CollectionView Grid.Row="2" Grid.ColumnSpan="2"
-                        ItemsSource="{Binding Jogadores}">
-            <CollectionView.ItemTemplate>
-
-                <DataTemplate>
-                    <SwipeView>
-                        <SwipeView.RightItems>
-                            <SwipeItems Mode="Execute">
-                                <SwipeItem Text="Presente" BackgroundColor="Red" Invoked="OnConfirmSwipeItemInvoked" />
-                            </SwipeItems>
-                        </SwipeView.RightItems>
-
-                        <Grid Padding="0,5">
-
-                            <Frame BorderColor="Gray"
-                                   CornerRadius="5"
-                                   Padding="8">
-                                <StackLayout>
-                                    <Label Text="{Binding Nome}"
-                                           FontSize="20"
-                                           FontAttributes="Bold" />
-                                    <BoxView Color="Gray"
-                                             HeightRequest="2"
-                                             HorizontalOptions="Fill" />
-                                    <Label Text="Nota:"
-                                           FontSize="15"
-                                           />
-                                    <Label Text="{Binding Nota}"/>
-                                </StackLayout>
-                            </Frame>
-
-                        </Grid>
-                    </SwipeView>
-                </DataTemplate>
-
-            </CollectionView.ItemTemplate>
-        </CollectionView>      
-               
-    </Grid>-->
-
-
     <VerticalStackLayout>  
 
-        <TableView x:Name="JogadoresTableView">
+        <TableView 
+            x:Name="JogadoresTableView"
+            BackgroundColor="GhostWhite"
+            WidthRequest="350"
+            Margin="0,10,0,0"
+            >
+            
             <TableRoot>
-                <TableSection Title="Jogadores">
+                <TableSection>
                 </TableSection>
             </TableRoot>
-        </TableView>                      
-    </VerticalStackLayout>        
-    
+        </TableView>
+
+        <Button 
+    Text="Confirmar"
+    WidthRequest="200"
+    TextColor="Black"
+    BackgroundColor="GhostWhite"
+    BorderColor="Green"                    
+    HorizontalOptions="Center"
+    Margin="0,20,0,0"
+    Clicked="OnConfirmButtonClicked" />
+
+    </VerticalStackLayout>
+
+
+
 
 </ContentPage>
