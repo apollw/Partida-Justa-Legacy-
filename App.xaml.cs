@@ -6,22 +6,13 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-        //Para ocorrer a navegação, precisamos primeiro criar a pilha de nav        
-
         /*Página Inicial*/
         var navPage = new NavigationPage(new MainPage());
         MainPage = navPage;
 
-        //Alterando propriedades das páginas
+        //Alterando propriedades da página
         navPage.BarBackgroundColor = Colors.ForestGreen;
         navPage.BarTextColor = Colors.White;
-
-        //Não há necessidade de criar novas var para cada menu a fim de editar suas propriedades
-        //Quando colocamos a NavigationPage inicial, apenas alterando a sua propriedade já
-        //podemos alterar todas as propriedades dos menus subsequentes
-
-        //Além disso, para gerar os outros menus, podemos apenas usar os métodos push ou pop
-        //quando for necessário
-
+      
     }
 }

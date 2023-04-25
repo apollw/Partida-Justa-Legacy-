@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Options;
 using Partida_Justa.Models;
 using Partida_Justa.Views;
 
@@ -30,24 +31,32 @@ public partial class menuSorteioSort : ContentPage
             await DisplayAlert("Alerta", "Número Insuficiente de Jogadores", "Fechar");
             await Navigation.PopAsync();
         }
-
     }
 
-    void OnPickerSelectedIndexChanged(object sender, EventArgs e)
+    //void OnPickerSelectedIndexChanged(object sender, EventArgs e)
+    //{
+    //    var picker = (Picker)sender;
+    //    int selectedIndex = picker.SelectedIndex;
+
+    //    if (selectedIndex != -1)
+    //    {
+    //        int valor = int.Parse((string)picker.ItemsSource[selectedIndex]);
+
+    //        // Atribue a nota do jogador aqui
+    //        var viewModel = (TimeViewModel)BindingContext;
+
+    //        if (valor != 0)
+    //            viewModel.tamanhoEquipe = valor;
+    //    }
+    //}
+
+    void OnStepperValueChanged(object sender, ValueChangedEventArgs e)
     {
-        var picker = (Picker)sender;
-        int selectedIndex = picker.SelectedIndex;
-
-        if (selectedIndex != -1)
-        {
-            int valor = int.Parse((string)picker.ItemsSource[selectedIndex]);
-
-            // Atribue a nota do jogador aqui
-            var viewModel = (TimeViewModel)BindingContext;
-
-            if(valor!=0)
-                viewModel.tamanhoEquipe = valor;
-        }
+        int valor = (int)e.NewValue;
+        // Atribue o número de Jogadores por Equipe aqui
+        var viewModel = (TimeViewModel)BindingContext;
+        if (valor != 0)
+            viewModel.tamanhoEquipe = valor;
     }
 
 }

@@ -30,9 +30,7 @@ namespace Partida_Justa.Models
         {
             EnviarCommand = new Command(OnEnviar);
             DeleteCommand = new Command(OnExcluir);
-            DeleteJogadorCommand = new Command<ModelJogador>(OnExcluirJogador);
-            Jogadores = new ObservableCollection<ModelJogador>();
-            
+            Jogadores = new ObservableCollection<ModelJogador>();          
         }
 
         public ModelJogador ObjJogador { get => objJogador; set => objJogador = value; }
@@ -42,7 +40,6 @@ namespace Partida_Justa.Models
         /*Implementando Comando*/
         public ICommand EnviarCommand { get; }
         public ICommand DeleteCommand { get; }
-        public ICommand DeleteJogadorCommand { get; }
 
         public string NomeJogador
         {
@@ -82,15 +79,6 @@ namespace Partida_Justa.Models
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName)); 
         }
               
-        public void OnExcluirJogador(ModelJogador jogador)
-        {            
-            Jogadores.Remove(jogador);
-
-            var filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
-            File.WriteAllText(filePath, JsonConvert.SerializeObject(Jogadores));
-        }
-
-
         public void OnEnviar()
         {           
             // Verifica se o arquivo jogadores.json existe
@@ -117,7 +105,9 @@ namespace Partida_Justa.Models
             }
 
             if (objJogador.Nome != String.Empty && objJogador.Nota != 0 && Repeticao == false)
-            {               
+            {
+                //Limita o tamanho da Entrada do Usuário
+                objJogador.Nome = objJogador.Nome.Substring(0, Math.Min(objJogador.Nome.Length, 20));
                 Jogadores.Add(objJogador);
                 File.WriteAllText(filePath, JsonConvert.SerializeObject(Jogadores));                
             }

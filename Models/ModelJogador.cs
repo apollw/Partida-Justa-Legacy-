@@ -10,7 +10,7 @@ namespace Partida_Justa
     public class ModelJogador 
     {
         private string nome = string.Empty;
-        private int nota = 0;
+        private int nota = 1;
         private bool presente = false;
 
         public string Nome { get => nome; set => nome = value; }

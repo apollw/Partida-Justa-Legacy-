@@ -147,5 +147,12 @@
     "C:\\Users\\lssilva\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.16\\microsoft.netcore.app.runtime.win-x64.6.0.16.nupkg.sha512",
     "C:\\Users\\lssilva\\.nuget\\packages\\microsoft.maui.controls.runtime.win\\6.0.552\\microsoft.maui.controls.runtime.win.6.0.552.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache D:\\Developer Inovacao\\Mobile\\Partida-Justa\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

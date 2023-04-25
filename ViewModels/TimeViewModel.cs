@@ -93,7 +93,7 @@ namespace Partida_Justa.Models
 
         //A partir da lista salva em JSON, montar um objeto Time com o número de jogadores 
         //determinado no Picker
-        public int tamanhoEquipe;
+        public int tamanhoEquipe=2;
         int quantidadeTimes = 0;
 
         public void OnSortearTime()

@@ -6,8 +6,6 @@ using Partida_Justa.Models;
 using Partida_Justa.Views;
 using System.Collections.ObjectModel;
 using System.Xml.Linq;
-
-
 namespace Partida_Justa;
 
 public partial class menuJogadorEditar : ContentPage
@@ -73,6 +71,15 @@ public partial class menuJogadorEditar : ContentPage
             HorizontalOptions = LayoutOptions.Center
         };
 
+        Label label = new Label { Text = "{Binding Source={x:Reference _stepper}, Path=Value, StringFormat='The Stepper value is {0:F0}'}" };
+        Stepper _stepper = new Stepper
+        {
+            Maximum = 5,
+            Minimum = 1,
+            Increment = 1,
+            Value = 1
+        };
+
         var saveButton = new Button
         {
             Text = "Salvar",
@@ -103,8 +110,9 @@ public partial class menuJogadorEditar : ContentPage
             if (nameEntry.Text != String.Empty && repetido==false)
             {
                 jogador.Nome = nameEntry.Text;
-                jogador.Nota = (int)notaPicker.SelectedItem;             
-                
+                //jogador.Nota = (int)notaPicker.SelectedItem;
+                jogador.Nota = (int)_stepper.Value;
+
                 //Salva as alterações
                 var filePath = Path.Combine(FileSystem.AppDataDirectory, "jogadores.json");
                 //Serializa a lista atualizada de volta para uma string JSON

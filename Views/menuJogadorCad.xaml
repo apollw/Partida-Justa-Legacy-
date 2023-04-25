@@ -22,7 +22,7 @@
             Keyboard="Default"
             />
 
-        <Picker 
+        <!--<Picker 
             x:Name="picker"
             WidthRequest="250"
             BackgroundColor="LightGray"   
@@ -31,7 +31,7 @@
             FontSize="Caption"
             HorizontalOptions="Center"
             SelectedIndexChanged="OnPickerSelectedIndexChanged">
-            
+
             <Picker.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>1</x:String>
@@ -41,7 +41,23 @@
                     <x:String>5</x:String>
                 </x:Array>
             </Picker.ItemsSource>
-        </Picker>
+        </Picker>-->
+
+        <Label Text="{Binding Source={x:Reference _stepper}, Path=Value, StringFormat='Nota: {0:F0}'}"
+               FontSize="Large"
+               TextColor="Azure"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+        <Stepper x:Name="_stepper"
+                 Minimum="1"
+                 Maximum="5"
+                 Value="1"
+                 Increment="1"
+                 BackgroundColor="White"                 
+                 HorizontalOptions="Center"
+                 ValueChanged="OnStepperValueChanged"
+                 />       
 
         <Button
                 WidthRequest="200"

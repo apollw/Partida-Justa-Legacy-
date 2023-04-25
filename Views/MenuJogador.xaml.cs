@@ -26,13 +26,11 @@ public partial class MenuJogador : ContentPage
            if (answer2)
            {
                     viewModel.OnExcluir();
-                    await DisplayAlert("Alerta", "Lista Apagada com Sucesso!", "Concluir");
                     await Navigation.PopAsync();
            }
         }
         else
         {
-            await DisplayAlert("Alerta", "A lista não foi alterada", "Concluir");
             await Navigation.PopAsync();
         }
     }

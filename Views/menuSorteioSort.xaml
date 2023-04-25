@@ -15,7 +15,7 @@
             WidthRequest="200"            
             Source="imagem_sorteio.png"/>
 
-            <Picker 
+        <!--<Picker 
             x:Name="picker"
             WidthRequest="250"
             BackgroundColor="LightGray"   
@@ -25,16 +25,31 @@
             HorizontalOptions="Center"
             SelectedIndexChanged="OnPickerSelectedIndexChanged">
 
-                <Picker.ItemsSource>
-                    <x:Array Type="{x:Type x:String}">
-                    <x:String>2</x:String>
-                    <x:String>3</x:String>
-                    <x:String>4</x:String>
-                    <x:String>5</x:String>
-                    <x:String>6</x:String>
-                    </x:Array>
-                </Picker.ItemsSource>
-            </Picker>
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                <x:String>2</x:String>
+                <x:String>3</x:String>
+                <x:String>4</x:String>
+                <x:String>5</x:String>
+                <x:String>6</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>-->
+
+        <Label Text="{Binding Source={x:Reference _stepper}, Path=Value, StringFormat='Número de Jogadores: {0:F0}'}"
+               FontSize="Medium"
+               TextColor="Azure"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+        <Stepper x:Name="_stepper"
+                 Minimum="2"
+                 Maximum="11"                 
+                 Increment="1"
+                 BackgroundColor="White"                 
+                 HorizontalOptions="Center"
+                 ValueChanged="OnStepperValueChanged"
+                 />
 
         <Button
                 WidthRequest="200"
