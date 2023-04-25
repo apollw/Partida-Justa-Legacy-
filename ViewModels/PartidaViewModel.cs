@@ -20,12 +20,7 @@ namespace Partida_Justa.ViewModels
         private ObservableCollection<ModelTime> _times;
 
         //OnPropertyChanged
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        //Comandos
-
-        //Propriedades
-
+        public event PropertyChangedEventHandler PropertyChanged;     
 
         public PartidaViewModel()
         {

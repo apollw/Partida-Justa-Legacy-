@@ -9,13 +9,7 @@ public partial class MenuSorteio : ContentPage
 		InitializeComponent();
 	}
 
-    //private async void MenuSortSorteio(object sender, EventArgs e)
-    //{
-    //    await Navigation.PushAsync(new menuSorteioSort());
-
-    //}
-
-    private async void MenuSortSorteio(object sender, EventArgs e)
+      private async void MenuSortSorteio(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new menuSorteioPresenca());
 

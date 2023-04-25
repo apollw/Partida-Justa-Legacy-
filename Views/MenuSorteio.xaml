@@ -29,8 +29,6 @@
                 HorizontalOptions="Center"
                 Clicked="MenuListaSorteio"
                 />
-
-  
-
+        
     </VerticalStackLayout>
 </ContentPage>

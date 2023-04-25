@@ -9,8 +9,6 @@ public partial class MenuJogador : ContentPage
 		InitializeComponent();
 	}
 
-    //Criação de Eventos Assíncronos
-
     private async void MenuCadJogador(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new menuJogadorCad());
@@ -38,7 +36,6 @@ public partial class MenuJogador : ContentPage
             await Navigation.PopAsync();
         }
     }
-
     private async void MenuEditarJogador(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new menuJogadorEditar());

@@ -8,8 +8,6 @@ namespace Partida_Justa.Views;
 public partial class menuSorteioPresenca : ContentPage
 {
     public ObservableCollection<ModelJogador> MyItems { get; set; }
-    public Dictionary<string, bool> selectedValues = new Dictionary<string, bool>(); //Para as Switches
-
     private List<SwitchCell> switchCells = new List<SwitchCell>();
     public menuSorteioPresenca()
 	{

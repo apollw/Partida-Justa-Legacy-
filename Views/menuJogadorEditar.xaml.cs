@@ -1,4 +1,3 @@
-//using AndroidX.Lifecycle;
 using Microsoft.Maui;
 using Microsoft.Maui.Controls.Platform;
 using Microsoft.Maui.Graphics;
@@ -6,10 +5,8 @@ using Newtonsoft.Json;
 using Partida_Justa.Models;
 using Partida_Justa.Views;
 using System.Collections.ObjectModel;
-//using System.Drawing;
 using System.Xml.Linq;
-//using static Android.Content.ClipData;
-//using static System.Net.Mime.MediaTypeNames;
+
 
 namespace Partida_Justa;
 

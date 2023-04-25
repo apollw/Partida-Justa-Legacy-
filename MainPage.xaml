@@ -37,18 +37,6 @@
                 HorizontalOptions="Center"
                 Clicked="MenuNavSorteio" />
 
-            <Button
-                WidthRequest="200"
-                Text="Menu de Partida"
-                TextColor="Black"
-                BackgroundColor="GhostWhite"
-                BorderColor="Green"
-                    
-                HorizontalOptions="Center"
-                Clicked="MenuNavPartida" />
-
-
-
         </VerticalStackLayout>
     </ScrollView>
 

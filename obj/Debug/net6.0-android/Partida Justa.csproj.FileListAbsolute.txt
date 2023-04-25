@@ -962,6 +962,20 @@ C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\stamp\_C
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\mscorlib.dll
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Collections.Concurrent.dll
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Data.dll
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.dll
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Xml.dll
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\typemaps.arm64-v8a.s
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\environment.arm64-v8a.s
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\compressed_assemblies.arm64-v8a.s
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\typemaps.arm64-v8a.o
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\environment.arm64-v8a.o
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\compressed_assemblies.arm64-v8a.o
+C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\app_shared_libraries\arm64-v8a\libxamarin-app.so
 C:\Users\lssilva\source\repos\Partida-Justa\bin\Debug\net6.0-android\Partida Justa.runtimeconfig.json
 C:\Users\lssilva\source\repos\Partida-Justa\bin\Debug\net6.0-android\Partida Justa.dll
 C:\Users\lssilva\source\repos\Partida-Justa\bin\Debug\net6.0-android\Partida Justa.pdb
@@ -1940,17 +1954,3 @@ C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-android\stamp\_Conv
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\lssilva\source\repos\Partida-Justa\obj\Debug\net6.0-android\stamp\_ResolveLibraryProjectImports.stamp
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\mscorlib.dll
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Collections.Concurrent.dll
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Data.dll
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.dll
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\assets\System.Xml.dll
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\typemaps.arm64-v8a.s
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\environment.arm64-v8a.s
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\compressed_assemblies.arm64-v8a.s
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\typemaps.arm64-v8a.o
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\environment.arm64-v8a.o
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\android\compressed_assemblies.arm64-v8a.o
-C:\Users\Leanderson\source\repos\Partida-Justa\obj\Debug\net6.0-android\app_shared_libraries\arm64-v8a\libxamarin-app.so

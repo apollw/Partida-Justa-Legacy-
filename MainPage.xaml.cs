@@ -19,11 +19,5 @@ public partial class MainPage : ContentPage
         await Navigation.PushAsync(new MenuSorteio());
     }
 
-    private async void MenuNavPartida(object sender, EventArgs e)
-    {
-        await Navigation.PushAsync(new MenuPartida());
-    }
-
-
 }
 
